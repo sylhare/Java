@@ -7,6 +7,10 @@ import java.util.ArrayList;
  */
 public class Test {
 
+    /**
+     * Main function for the program
+     * @param args
+     */
     public static void main (String[] args){
         String[] ls = new String[2]; //Inside is the length
         ArrayList<String> als = new ArrayList<>(5);

@@ -1,5 +1,6 @@
 /**
  *
+ * With the intent to have global int to set the value of the heroes
  *
  */
 public enum Settings {
@@ -7,11 +8,23 @@ public enum Settings {
 
     private int value;
 
-    private Settings(int i) {
+    /**
+     * Constructor
+     *
+     * @param i
+     */
+    Settings(int i) {
+
         value = i;
     }
 
+    /**
+     * Getter
+     *
+     * @return value
+     */
     public int getValue() {
+
         return value;
     }
 }

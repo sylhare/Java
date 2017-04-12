@@ -2,6 +2,13 @@
 Thumbs.db
 ehthumbs.db
 
+# Some IDE and java auto generated files
+*.iml
+*.class
+*.xml
+*.groovy
+Enumtest.java
+
 # Folder config file
 Desktop.ini
 

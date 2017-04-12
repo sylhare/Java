@@ -16,10 +16,36 @@ abstract class Human {
     String[] name = new String[2];
     ArrayList<String> belongings = new ArrayList<>(slot);
 
+    /**
+     * 
+     * Should increase health
+     * 
+     */
     abstract void heal();
+
+    /**
+     * 
+     * Should raise health, might have weird effects depending on the food
+     * for intel, weight and strength
+     * 
+     * @param food
+     */
     abstract void eat(Food food);
+
+    /**
+     * Should raise Strength and diminish weight
+     * 
+     */
     abstract void workout();
+
+    /**
+     * Should raise intel, but might diminish strength and health
+     */
     abstract void study();
+
+    /**
+     * Should raise Strength, but might diminish health and intel
+     */
     abstract void fight();
 
     @Override

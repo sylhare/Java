@@ -12,6 +12,15 @@ public class HumanImpl extends Human {
         //Will take the value of the Human abstract class
     }
 
+    /**
+     *
+     * Constructor for a basic human
+     *
+     * @param life
+     * @param weight
+     * @param strength
+     * @param intel
+     */
     public HumanImpl(int life, int weight, int strength, int intel){
        this.life = life;
        this.weight = weight;
