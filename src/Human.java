@@ -1,59 +1,58 @@
-import java.util.ArrayList;
-
 /**
- *
- * Human abstract class, to describe what a normal human can do
  *
  *
  */
-abstract class Human {
-    int slot = 5;
-    int life = 100;
-    int weight = 70;
-    int strength = 25;
-    int intel = 115;
-
-    String[] name = new String[2];
-    ArrayList<String> belongings = new ArrayList<>(slot);
+public class Human extends Living {
 
     /**
-     * 
-     * Should increase health
-     * 
+     * Constructor to build Human Impl while initiating the variables
+     *
      */
-    abstract void heal();
-
-    /**
-     * 
-     * Should raise health, might have weird effects depending on the food
-     * for intel, weight and strength
-     * 
-     * @param food
-     */
-    abstract void eat(Food food);
-
-    /**
-     * Should raise Strength and diminish weight
-     * 
-     */
-    abstract void workout();
-
-    /**
-     * Should raise intel, but might diminish strength and health
-     */
-    abstract void study();
-
-    /**
-     * Should raise Strength, but might diminish health and intel
-     */
-    abstract void fight();
-
-    @Override
-    public String toString(){
-        return "\nlife : " + this.life + "\nweight : " + this.weight + "\nstrenght : "
-                + this.strength + "\nintel : " + this.intel;
+    public Human() {
+        //Will take the value of the Human abstract class
     }
 
+    /**
+     *
+     * Constructor for a basic human
+     *
+     * @param life
+     * @param weight
+     * @param strength
+     * @param intel
+     */
+    public Human(int life, int weight, int strength, int intel){
+       this.life = life;
+       this.weight = weight;
+       this.strength = strength;
+       this.intel = intel;
+    }
 
+    @Override
+    public void heal() {
+        this.life += Settings.BONUS.getValue();
+    }
 
+    @Override
+    public void eat(Food food) {
+        this.weight = food.getFat();
+        this.life = food.getNutrient();
+    }
+
+    @Override
+    public void workout() {
+        this.strength += Settings.BONUS.getValue();
+        this.life += Settings.BONUS_MID.getValue();
+    }
+
+    @Override
+    public void study() {
+        this.intel += Settings.BONUS.getValue();
+    }
+
+    @Override
+    public void fight() {
+        this.strength += Settings.BONUS.getValue();
+        this.life += Settings.BONUS.getValue();
+    }
 }

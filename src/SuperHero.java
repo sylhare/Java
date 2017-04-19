@@ -5,12 +5,12 @@ import java.util.ArrayList;
  *
  */
 public class SuperHero extends Human {
-    public ArrayList<Power> powers = new ArrayList<>();
-    public String heroName = "Super";
+    private ArrayList<Power> powers = new ArrayList<>();
+    private String heroName = "Super";
     private Boolean isRevealed = false;
 
     /**
-     * Basic Constructor
+     * Basic Constructor with default values
      */
     public SuperHero() {
 
@@ -18,13 +18,12 @@ public class SuperHero extends Human {
     }
 
     /**
-     * Constructor for the hero and his name
+     * Constructor to set the hero's name and his super hero nickname
      *
      * @param heroName
      * @param name
      */
     public SuperHero(String heroName, String name) {
-
         this();
         this.heroName = heroName;
         this.name[0] = name;
@@ -61,27 +60,28 @@ public class SuperHero extends Human {
     }
 
     @Override
-    void heal() {
+    public void heal() {
 
     }
 
     @Override
-    void eat(Food food) {
+    public void eat(Food food) {
+        super.eat(food);
 
     }
 
     @Override
-    void workout() {
+    public void workout() {
 
     }
 
     @Override
-    void study() {
+    public void study() {
 
     }
 
     @Override
-    void fight() {
+    public void fight() {
 
     }
 
@@ -91,8 +91,25 @@ public class SuperHero extends Human {
         return heroName + " - " + this.name[0] + " : " + super.toString();
     }
 
+    public String getHeroName() {
+        return this.heroName;
+    }
+
+    public void setHeroName(String heroName) {
+        this.heroName = heroName;
+    }
+
+    public String getpowers() {
+        String s = "";
+        for (int i = 0; i < this.powers.size(); i++){
+            s += this.powers.get(i).toString();
+        }
+
+        return s + "\n";
+    }
+
     /**
-     * Sub Class Power
+     * Inner Class Power
      */
     public class Power {
         private String name;
@@ -114,13 +131,17 @@ public class SuperHero extends Human {
          */
         @Override
         public String toString(){
-            String s = "";
+            String s = this.name + ": ";
 
             for (int i = 0; i < this.effects.length; i++){
                 s += effects[i] + " ";
             }
 
             return s;
+        }
+
+        public String getName(){
+            return this.name;
         }
     }
 

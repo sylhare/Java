@@ -55,3 +55,73 @@ A window appear, on the left side there's a dropdown menu (called `Defaults`). C
 Now that you have that set up you should see a green arrow next to that field (next to the build button). If you click on it, it will run your project and you'll see on the botton a split screen with the output (like on Netbeans, yeah!).
 
 
+## What's so special coding in JAVA
+
+Here are some key features that are good to keep in mind. If one's want to learn, I would suggest going on these websites:
+
+- [Open Classroom](https://openclassrooms.com/courses/apprenez-a-programmer-en-java) (FRENCH)
+- [Sololearn](https://www.sololearn.com/Course/Java/) (ENGLISH)
+
+### Encapsulation
+
+Encapsulation is made through keywords that define how the object (method, attribute, ...) can be accessed.
+We call it encapsulation because it can isolate and control data access.
+
+#### private
+
+With private, you make the value or method unavailable outside the class it's in.
+In order to get to private attribute, you'll need to use "getter" and "setter" that will get and return the value, or that will set the value correctly. 
+That way you have more control and flexibility on the access and modifications of the attributes.
+
+#### protected
+
+A protected value or method will only be available inside the same package or child class (even in foreign package). 
+Packages are Like the folders where the `.java` file is stored
+
+#### public
+
+It has no restrictions and can be available from anywhere and modified direclty. However the class which it's called from should be instanced before.
+
+#### Other keywords that goes with encapsulation
+
+##### final
+
+The final key word should be placed before the type.
+
+- For a variable, it means it can't be reassigned.
+- For a method, it means it can't be overrided in by a child class. (So an abstract method can't be final) 
+- For a class, it means that a child class can't be created from the final one.
+
+##### static
+
+A static field, method or class has a single instance for the whole class that defines it, even if there is no instance of this class in the program. It can so be called from anywhere. </br>
+It should be placed before the final keyword.
+
+
+### Polymorphism
+
+#### Overriding
+
+Overriding is *runtime polymorphism* when you change the inherited method (can't override final or static, can't narrow encapsulation)
+
+#### Overloading
+
+Overloading is *compile-time polymorphism* when you declare multiple time the same method but with different input
+
+### Inheritance 
+
+### abstraction
+
+The concept of abstraction is that we focus on essential qualities, rather than the specific characteristics of one particular example.
+
+In Java, abstraction is achieved using abstract classes and interfaces.
+
+#### abstract class
+
+An abstract class is a class that have at least one abstract method. An abstract method is only a definition, it does not have a body.
+The abstract element are to be implemented in the child class, it used to give a default behaviour and common characteristics.
+
+#### Interfaces
+
+There's no constructors in an Interface, there's only abstract methods and variables. </br>
+If you wish to store instanced variables however it is best practice to use an Enum instead.

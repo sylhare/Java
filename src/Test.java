@@ -14,9 +14,10 @@ public class Test {
     public static void main (String[] args){
         String[] ls = new String[2]; //Inside is the length
         ArrayList<String> als = new ArrayList<>(5);
-        Human h = new HumanImpl();
-        HumanImpl hi = new HumanImpl();
-        SuperHero sh = new SuperHero("Wolverine", "Logan");
+        Living living = new Human();
+        Human human = new Human();
+        SuperHero superHero = new SuperHero("Wolverine", "Logan");
+        Food Burger = new Food(70, 30, "diabetes");
 
         //Some debug tests
         int[] tab = {1, 2, 3, 4};
@@ -25,13 +26,15 @@ public class Test {
         System.out.println("tab : " + tab[0]);
 
         //SuperHero
-        sh.revealPower("Claw", tab);
-        System.out.println(sh.toString());
-        System.out.println(sh.powers.get(0).toString());
+        superHero.revealPower("Claw", tab);
+        System.out.println(superHero.toString());
+        System.out.println(superHero.getpowers());
 
         //Human and Human implementation
-        System.out.println("\nabstract \n" + h.toString());
-        System.out.println("-------------- \nclass \n" + hi.toString());
+        System.out.println("\nabstract \n" + living.toString());
+        System.out.println("-------------- \nclass \n" + human.toString());
+
+        //Food
 
         //Array list and lists
         for(int i = 0; i < ls.length; i++){
