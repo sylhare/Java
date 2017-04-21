@@ -6,8 +6,16 @@
 public class Food {
     private int fat;
     private int nutrient;
-    private String special_effect;
+    private String effect;
     private int super_effect;
+
+    public Food(){
+        this.fat = (int)(Math.random() * 50);
+        this.nutrient = (int)(Math.random() * 50);
+        this.effect = "nothing special";
+        this.super_effect = 0;
+        this.yummy();
+    }
 
     /**
      * Constructor
@@ -19,9 +27,10 @@ public class Food {
      * @param effect
      */
     public Food(int fat, int nutrient, String effect){
+        this();
         this.fat = fat;
         this.nutrient = nutrient;
-        this.special_effect = effect;
+        this.effect = effect;
         this.super_effect = getSuper(effect);
     }
 
@@ -56,9 +65,11 @@ public class Food {
 
     }
 
-    @Override
-    public String toString(){
-        return "fat: " + this.fat + "% nutrient: " + this.nutrient + "% special effects: " + this.special_effect;
+    /**
+     * Print yummy
+     */
+    public void yummy(){
+        System.out.println("Yummy !");
     }
 
     public int getFat(){
@@ -68,4 +79,20 @@ public class Food {
     public int getNutrient(){
         return this.nutrient;
     }
+
+    public int getSuper_effect() { return this.super_effect; }
+
+    public String getEffect() { return this.effect; }
+
+    @Override
+    public String toString(){
+        String s = "fat: " + this.getFat() + "% nutrient: " + this.getNutrient() + "% special effects: " +
+                this.getEffect();
+
+        if (this.super_effect != 0) {
+            s += "  \nPower after effects: " + this.getSuper_effect() + "%";
+        }
+        return s;
+    }
+
 }

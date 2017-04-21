@@ -100,15 +100,27 @@ It should be placed before the final keyword.
 
 ### Polymorphism
 
+Polymorphism refers to the idea of having multiple forms, it occurs with child class and parent class when you inherite or pass a method. Each class can have its own implementation of the same method.
+
 #### Overriding
 
-Overriding is *runtime polymorphism* when you change the inherited method (can't override final or static, can't narrow encapsulation)
+Overriding is *runtime polymorphism* when you change the inherited method (can't override final or static, can't narrow encapsulation). Overrinding is tagged in java thanks to the `@Overriding` keyword.
 
 #### Overloading
 
-Overloading is *compile-time polymorphism* when you declare multiple time the same method but with different input
+Overloading is *compile-time polymorphism* when you declare multiple time the same method but with different input. There's no particular keyword for over loading, only multiple methods with same name but different arguments.
 
 ### Inheritance 
+
+Inheritance refers to the process that enables one class to acquire the methods and variable of a parent class thanks to the `extends` keyword:
+
+- The class inheriting is the *subclass* (also called *child class* or *derived class*).
+- The class whose properties are inherited is the *super class* (also called *parent class* or *base class*)
+
+Inheritance can be regulated thanks to the encapsulation keywords seen above (public, private, ...). </br>
+The parent constructor (which are called when the class is instanced) can't be inherited by the child class. However it is automatically called in the constructor of the child class.
+
+The `super()` method can be used to call the parent constructor directly. You can also use the `super` keyword to call directly methods or variables from the parent class (for example `super.method()` or `super.value`)
 
 ### abstraction
 
@@ -118,10 +130,10 @@ In Java, abstraction is achieved using abstract classes and interfaces.
 
 #### abstract class
 
-An abstract class is a class that have at least one abstract method. An abstract method is only a definition, it does not have a body.
-The abstract element are to be implemented in the child class, it used to give a default behaviour and common characteristics.
+An abstract class is a class that have at least one abstract method marked with the `abstract` keyword (put in the definition instead of `public` for example). An abstract method is only a definition, it does not have a body. </br> 
+The abstract element are to be implemented in the child class when inherited, it used to give a default behaviour and common characteristics.
 
 #### Interfaces
 
-There's no constructors in an Interface, there's only abstract methods and variables. </br>
+There's no constructors in an Interface, there's only abstract methods and variables. The interface is set thanks to the `implement` keyword at the definition of the class.</br>
 If you wish to store instanced variables however it is best practice to use an Enum instead.

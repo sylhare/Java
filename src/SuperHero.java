@@ -59,6 +59,33 @@ public class SuperHero extends Human {
         this.enhance(power.effects[0], power.effects[1], power.effects[2], power.effects[3]);
     }
 
+    /**
+     *
+     * @return the hero name
+     */
+    public String getHeroName() {
+        return this.heroName;
+    }
+
+    /**
+     * Set the hero name
+     *
+     * @param heroName
+     */
+    public void setHeroName(String heroName) {
+        this.heroName = heroName;
+    }
+
+    public String getPowers() {
+        String s = "";
+        for (int i = 0; i < this.powers.size(); i++){
+            s += this.powers.get(i).toString();
+        }
+
+        return s + "\n";
+    }
+
+
     @Override
     public void heal() {
 
@@ -86,26 +113,15 @@ public class SuperHero extends Human {
     }
 
     @Override
+    public void talk(String text){
+        text = text.toUpperCase();  //Super heroes talk in upper case
+        System.out.println(text);
+    }
+
+    @Override
     public String toString()
     {
-        return heroName + " - " + this.name[0] + " : " + super.toString();
-    }
-
-    public String getHeroName() {
-        return this.heroName;
-    }
-
-    public void setHeroName(String heroName) {
-        this.heroName = heroName;
-    }
-
-    public String getpowers() {
-        String s = "";
-        for (int i = 0; i < this.powers.size(); i++){
-            s += this.powers.get(i).toString();
-        }
-
-        return s + "\n";
+        return this.getHeroName() + " - " + this.name[0] + " : " + super.toString();
     }
 
     /**
@@ -127,21 +143,25 @@ public class SuperHero extends Human {
 
         /**
          *
+         * @return the power name
+         */
+        public String getName(){
+            return this.name;
+        }
+
+        /**
+         *
          * @return a String decribing the power
          */
         @Override
         public String toString(){
-            String s = this.name + ": ";
+            String s = this.getName() + ": ";
 
             for (int i = 0; i < this.effects.length; i++){
                 s += effects[i] + " ";
             }
 
             return s;
-        }
-
-        public String getName(){
-            return this.name;
         }
     }
 

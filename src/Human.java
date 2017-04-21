@@ -28,6 +28,19 @@ public class Human extends Living {
        this.intel = intel;
     }
 
+    /**
+     *  Print the text
+     *
+     * @param text
+     */
+    public void talk(String text){
+        System.out.println(text);
+    }
+
+    public void hello(String text){
+        System.out.println(text);
+    }
+
     @Override
     public void heal() {
         this.life += Settings.BONUS.getValue();

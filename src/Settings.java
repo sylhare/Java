@@ -4,7 +4,8 @@
  *
  */
 public enum Settings {
-    BONUS(10), BONUS_MID(Settings.BONUS.getValue()/2);
+    BONUS(10),
+    BONUS_MID(Settings.BONUS.getValue() / 2);
 
     private final int value;
 
@@ -14,7 +15,6 @@ public enum Settings {
      * @param i
      */
     Settings(int i) {
-
         value = i;
     }
 
@@ -24,7 +24,6 @@ public enum Settings {
      * @return value
      */
     public int getValue() {
-
         return value;
     }
 }

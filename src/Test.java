@@ -17,24 +17,15 @@ public class Test {
         Living living = new Human();
         Human human = new Human();
         SuperHero superHero = new SuperHero("Wolverine", "Logan");
-        Food Burger = new Food(70, 30, "diabetes");
+        Food burger = new Food(70, 30, "diabetes");
+        Food rubbish;
 
-        //Some debug tests
+        /*       ------   Some tests   ------         */
+        // Simple int array
         int[] tab = {1, 2, 3, 4};
         System.out.println("\ntab : " + tab[0]);
         tab = new int[]{4, 3, 2, 1};
         System.out.println("tab : " + tab[0]);
-
-        //SuperHero
-        superHero.revealPower("Claw", tab);
-        System.out.println(superHero.toString());
-        System.out.println(superHero.getpowers());
-
-        //Human and Human implementation
-        System.out.println("\nabstract \n" + living.toString());
-        System.out.println("-------------- \nclass \n" + human.toString());
-
-        //Food
 
         //Array list and lists
         for(int i = 0; i < ls.length; i++){
@@ -42,6 +33,31 @@ public class Test {
             als.add(" - String ArrayList ");
             System.out.println(ls[i] + i + als.get(i));
         }
+
+        // Casting
+        Object o = "12345";
+        System.out.println(Integer.parseInt((String) o)); //"Object" casted into "String" parsed into "int"
+
+        //living and Human
+        System.out.println("\nabstract \n" + living.toString());
+        System.out.println("-------------- \nclass \n" + human.toString());
+
+        //SuperHero
+        superHero.revealPower("Claw", tab);
+        System.out.println(superHero.toString());
+        System.out.println(superHero.getPowers());
+        superHero.talk("Hi! How are you?");
+
+        //Food Test
+        System.out.println(burger.toString());
+        rubbish = new Food(){
+            @Override
+            public void yummy(){
+                System.out.println("Eww !");
+            }
+        };
+        human.eat(rubbish);
+        System.out.println("-------------- \nAfter eating Rubbish \n" + human.toString());
 
         //Settings Enum
         System.out.println(Settings.BONUS.getValue()); // give you the value
