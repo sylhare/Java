@@ -137,3 +137,11 @@ The abstract element are to be implemented in the child class when inherited, it
 
 There's no constructors in an Interface, there's only abstract methods and variables. The interface is set thanks to the `implement` keyword at the definition of the class.</br>
 If you wish to store instanced variables however it is best practice to use an Enum instead.
+
+
+## Automated testing
+
+XUnit and JUnit is used for automated testing on JAVA.
+
+[http://junit.org/junit4/](http://junit.org/junit4/)
+[http://xunit.github.io/](http://xunit.github.io/)

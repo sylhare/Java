@@ -4,6 +4,7 @@
  *
  */
 public enum Settings {
+    DISASTER_RATE(20),
     BONUS(10),
     BONUS_MID(Settings.BONUS.getValue() / 2);
 
@@ -27,3 +28,4 @@ public enum Settings {
         return value;
     }
 }
+

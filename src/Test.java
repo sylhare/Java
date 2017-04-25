@@ -17,7 +17,7 @@ public class Test {
         Living living = new Human();
         Human human = new Human();
         SuperHero superHero = new SuperHero("Wolverine", "Logan");
-        Food burger = new Food(70, 30, "diabetes");
+        Food burger = new Food("burger", 70, 30, "diabetes");
         Food rubbish;
 
         /*       ------   Some tests   ------         */
@@ -50,7 +50,8 @@ public class Test {
 
         //Food Test
         System.out.println(burger.toString());
-        rubbish = new Food(){
+        // Creating an anonymous class when calling the the Food class to override a method
+        rubbish = new Food("rubbish"){
             @Override
             public void yummy(){
                 System.out.println("Eww !");

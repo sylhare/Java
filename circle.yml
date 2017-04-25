@@ -1,0 +1,21 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    America/Los_Angeles # Set the timezone
+
+  java:
+    version: openjdk8
+
+  # Add some environment variables
+  environment:
+    CIRCLE_ENV: test
+
+
+test:
+  - ./run_tests.sh
+ 
+
+## Custom notifications
+#notify:
+#  channel:

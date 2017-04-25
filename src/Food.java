@@ -4,17 +4,30 @@
  *
  */
 public class Food {
+    private String name;
     private int fat;
     private int nutrient;
     private String effect;
     private int super_effect;
 
     public Food(){
+        this.name = "Food";
         this.fat = (int)(Math.random() * 50);
         this.nutrient = (int)(Math.random() * 50);
         this.effect = "nothing special";
         this.super_effect = 0;
         this.yummy();
+        // System.out.println(getClass().getName()); --> returns "Food"
+    }
+
+    /**
+     * Creating a random food with a set name
+     *
+     * @param name
+     */
+    public Food(String name) {
+        this();
+        this.name = name;
     }
 
     /**
@@ -26,8 +39,8 @@ public class Food {
      * @param nutrient
      * @param effect
      */
-    public Food(int fat, int nutrient, String effect){
-        this();
+    public Food(String name, int fat, int nutrient, String effect){
+        this.name = name;
         this.fat = fat;
         this.nutrient = nutrient;
         this.effect = effect;
