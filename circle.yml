@@ -1,19 +1,21 @@
 ## Customize the test machine
 machine:
-
-  timezone:
-    America/Los_Angeles # Set the timezone
-
+  timezone: UTC
   java:
-    version: openjdk8
+    version: oraclejdk8
 
   # Add some environment variables
-  environment:
-    CIRCLE_ENV: test
+#  environment:
+#   
+
+# CIRCLE_ENV: test
 
 
 test:
-  - ./run_tests.sh
+  override:
+    - "bash run_tests.sh"
+  post:
+    - "echo Build succeeded!"
  
 
 ## Custom notifications
