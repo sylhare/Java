@@ -86,6 +86,10 @@ public class Food {
         System.out.println("Yummy !");
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     public int getFat(){
         return this.fat;
     }
