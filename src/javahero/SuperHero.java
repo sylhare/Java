@@ -1,3 +1,5 @@
+package javahero;
+
 import java.util.ArrayList;
 
 /**
@@ -85,7 +87,7 @@ public class SuperHero extends Human {
         return s + "\n";
     }
 
-
+/*
     @Override
     public void heal() {
 
@@ -110,18 +112,26 @@ public class SuperHero extends Human {
     @Override
     public void fight() {
 
-    }
+    }*/
 
     @Override
     public void talk(String text){
-        text = text.toUpperCase();  //Super heroes talk in upper case
-        System.out.println(text);
+        String t = text.toUpperCase();  //Super heroes talk in upper case
+        System.out.println(t);
     }
 
     @Override
     public String toString()
     {
         return this.getHeroName() + " - " + this.name[0] + " : " + super.toString();
+    }
+
+    /**
+     * To know if the superhero has discover is power
+     * @return isRevealed value
+     */
+    public boolean hasSuperPower(){
+        return isRevealed;
     }
 
     /**

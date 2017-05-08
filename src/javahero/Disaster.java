@@ -1,3 +1,5 @@
+package javahero;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -5,7 +7,7 @@ import java.util.Set;
  * Created by sylhare on 2017-04-25.
  * Implementing the Runnable Interface makes it possible to call multiple threads
  * with:
- * Thread t = new Thread(new Disaster());
+ * Thread t = new Thread(new javahero.Disaster());
  * t.start();
  *
  */
@@ -44,18 +46,28 @@ public class Disaster implements Runnable {
 
     /**
      *
-     * Monster subclass from the Disaster class
+     * Monster subclass from the javahero.Disaster class
      */
     private class Monster {
-        private Set<String> levels = new HashSet<>();
+        /**
+         * Disaster level
+         * God, Dragon, Demon, Tiger, Wolf
+         */
+        private String disasterLevel;
         private int life = 100;
         private int strength = 100;
         private String name;
-        private String disasterLevel;
 
         public Monster(){
             this.name = randomName();
             this.disasterLevel = randomDisaster();
+        }
+
+        public Monster(int life, int strength, String name, String disasterLevel){
+            this.life = life;
+            this.strength = strength;
+            this.name = name;
+            this.disasterLevel = disasterLevel;
         }
 
         public Monster(String name, String disasterLevel){
@@ -86,5 +98,7 @@ public class Disaster implements Runnable {
         public void chaos(){
             // do stuff
         }
+
+
     }
 }

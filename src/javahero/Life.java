@@ -1,3 +1,5 @@
+package javahero;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -6,7 +8,7 @@ import java.util.Random;
  *
  * Extending a class from the thread one allow to create a thread
  * The run function will be called when using the "start()" method to start a thread:
- * Life obj = new Life();
+ * javahero.Life obj = new javahero.Life();
  * obj.start();
  *
  */
@@ -21,14 +23,14 @@ public class Life extends Thread {
     @Override
     public void run() {
         try {
-            life_events();
+            lifeEvents();
             System.out.println(String.format("Thread: %s %s", Thread.currentThread().getName()));
         } catch (Exception e) {
             System.out.println(e.getCause());
         }
     }
 
-    private void life_events() {
+    private void lifeEvents() {
         Random r = new Random();
 
         if (r.nextInt(100) < Settings.DISASTER_RATE.getValue()) {
@@ -41,7 +43,7 @@ public class Life extends Thread {
 
     private void facts (int i) {
         switch (i) {
-            case 1:  this.gifts.add(facts_freeMeal());
+            case 1:  this.gifts.add(factsFreeMeal());
                 break;
             case 2: facts_sayings("Sure is Chilly today");
                 break;
@@ -52,9 +54,9 @@ public class Life extends Thread {
 
     /**
      *
-     * @return a random Food Object
+     * @return a random javahero.Food Object
      */
-    private Food facts_freeMeal() {
+    private Food factsFreeMeal() {
         return new Food();
     }
 

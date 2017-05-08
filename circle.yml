@@ -4,13 +4,11 @@ machine:
   java:
     version: oraclejdk8
 
-  # Add some environment variables
-#  environment:
-#   
-
-# CIRCLE_ENV: test
-
-
+dependencies:
+  pre:
+    - "export DISPLAY=:99.0"
+#    - "sh -e /etc/init.d/xvfb start"
+    
 test:
   override:
     - "bash run_tests.sh"

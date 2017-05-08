@@ -1,3 +1,5 @@
+package javahero;
+
 /**
  *
  *
@@ -5,11 +7,11 @@
 public class Human extends Living {
 
     /**
-     * Constructor to build Human Impl while initiating the variables
+     * Constructor to build javahero.Human Impl while initiating the variables
      *
      */
     public Human() {
-        //Will take the value of the Human abstract class
+        //Will take the value of the javahero.Human abstract class
     }
 
     /**

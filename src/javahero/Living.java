@@ -1,27 +1,29 @@
+package javahero;
+
 import java.util.ArrayList;
 
 /**
  *
- * Living abstract class, to describe what a normal Living can do
+ * javahero.Living abstract class, to describe what a normal javahero.Living can do
  *
  *
  */
-abstract class Living {
-    int slot = 5;
-    int life = 100;
-    int weight = 70;
-    int strength = 25;
-    int intel = 115;
+public abstract class Living {
+    public int slot = 5;
+    public int life = 100;
+    public int weight = 70;
+    public int strength = 25;
+    public int intel = 115;
 
-    String[] name = new String[2];
-    ArrayList<String> belongings = new ArrayList<>(slot);
+    public String[] name = new String[2];
+    public ArrayList<String> belongings = new ArrayList<>(slot);
 
     /**
      * 
      * Should increase health
      * 
      */
-    abstract void heal();
+    public abstract void heal();
 
     /**
      * 
@@ -30,23 +32,23 @@ abstract class Living {
      * 
      * @param food
      */
-    abstract void eat(Food food);
+    public abstract void eat(Food food);
 
     /**
      * Should raise Strength and diminish weight
      * 
      */
-    abstract void workout();
+    public abstract void workout();
 
     /**
      * Should raise intel, but might diminish strength and health
      */
-    abstract void study();
+    public abstract void study();
 
     /**
      * Should raise Strength, but might diminish health and intel
      */
-    abstract void fight();
+    public abstract void fight();
 
     @Override
     public String toString(){

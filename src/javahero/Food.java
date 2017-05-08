@@ -1,3 +1,5 @@
+package javahero;
+
 /**
  *
  * For Humans to eat()
@@ -8,16 +10,16 @@ public class Food {
     private int fat;
     private int nutrient;
     private String effect;
-    private int super_effect;
+    private int superEffect;
 
     public Food(){
-        this.name = "Food";
+        this.name = "javahero.Food";
         this.fat = (int)(Math.random() * 50);
         this.nutrient = (int)(Math.random() * 50);
         this.effect = "nothing special";
-        this.super_effect = 0;
+        this.superEffect = 0;
         this.yummy();
-        // System.out.println(getClass().getName()); --> returns "Food"
+        // System.out.println(getClass().getName()); --> returns "javahero.Food"
     }
 
     /**
@@ -32,7 +34,7 @@ public class Food {
 
     /**
      * Constructor
-     * The super_effect of the food that influence only the super hero
+     * The superEffect of the food that influence only the super hero
      * gets generated randomly.
      *
      * @param fat
@@ -44,28 +46,27 @@ public class Food {
         this.fat = fat;
         this.nutrient = nutrient;
         this.effect = effect;
-        this.super_effect = getSuper(effect);
+        this.superEffect = getSuper(effect);
     }
 
     /**
-     * We generate a random "super_effect" that will affect super heroes
+     * We generate a random "superEffect" that will affect super heroes
      *
      * @param effect
-     * @return super_effect
+     * @return superEffect
      */
     private int getSuper(String effect){
         char[] characters;
-        int super_effect = 0;
-        effect = effect.replace(" ", "");
-        characters = effect.toCharArray();
+        int superEffect = 0;
+        characters = effect.replace(" ", "").toCharArray();
 
         for (Character c : characters) {
-            super_effect = super_effect + getRandomFactor() * (c - 'a' + 1);
+            superEffect = superEffect + getRandomFactor() * (c - 'a' + 1);
         }
 
-        super_effect = super_effect % (this.nutrient + this.fat);
+        superEffect = superEffect % (this.nutrient + this.fat);
 
-        return super_effect;
+        return superEffect;
     }
 
     /**
@@ -93,7 +94,7 @@ public class Food {
         return this.nutrient;
     }
 
-    public int getSuper_effect() { return this.super_effect; }
+    public int getsuperEffect() { return this.superEffect; }
 
     public String getEffect() { return this.effect; }
 
@@ -102,8 +103,8 @@ public class Food {
         String s = "fat: " + this.getFat() + "% nutrient: " + this.getNutrient() + "% special effects: " +
                 this.getEffect();
 
-        if (this.super_effect != 0) {
-            s += "  \nPower after effects: " + this.getSuper_effect() + "%";
+        if (this.superEffect != 0) {
+            s += "  \nPower after effects: " + this.getsuperEffect() + "%";
         }
         return s;
     }

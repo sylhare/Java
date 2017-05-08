@@ -1,4 +1,4 @@
-# Java Hero
+# Java Hero [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dec313da3c1a4b7997c2f638738d8f53)](https://www.codacy.com/app/Sylhare/Java_hero?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Sylhare/Java_hero&amp;utm_campaign=Badge_Grade)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com)
 
 Here is a little playground for Java development. 

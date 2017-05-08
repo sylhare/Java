@@ -1,20 +1,20 @@
 #!/bin/bash
 # Compiling the java files and running them
 
-javac scr/*.java  # Compiling all of the java files
+# Compiling all of the java files
+javac *.java -cp"../src/javahero" 
 compile=$? 
-java -cp ./scr Test  # Running the Test file with the main in it, cp = class path
+
+#To put the system on hold for 3 seconds
+sleep 3 
+
+# Running the javahero.Test file with the main in it, cp = class path
+java Test.class -cp"../src/javahero" 
 run=$? 
-
-# Watching a movie after work
-
-timeout 100 firefox https://www.youtube.com/watch?v=wdxlc2UdAmg
-movie=$? 
 
 echo "Compile Status: $compile"
 echo "Run Status: $run"
-echo "Movie Status: $movie"
 
-sleep 90 #To put the system on hold for 90 seconds
+
 
 exit 0

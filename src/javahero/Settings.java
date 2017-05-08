@@ -1,3 +1,5 @@
+package javahero;
+
 /**
  *
  * With the intent to have global int to set the value of the heroes
@@ -28,4 +30,3 @@ public enum Settings {
         return value;
     }
 }
-

@@ -1,3 +1,5 @@
+package tests;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
@@ -41,7 +43,7 @@ public class ListTest {
     }
 
     /**
-     * to fill the Test list
+     * to fill the javahero.Test list
      */
     public static void setUp() {
         aTestList = new ArrayList<String>();
@@ -71,7 +73,7 @@ public class ListTest {
      *
      */
     public static List<String> concatenate(List<String> list){
-        String t = new String();
+        String t = "";
         List<String> cList = new ArrayList<String>();
 
         for(String i:list)
