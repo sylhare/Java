@@ -62,7 +62,8 @@ Here are some key features that are good to keep in mind. If one's want to learn
 - [Open Classroom](https://openclassrooms.com/courses/apprenez-a-programmer-en-java) (FRENCH)
 - [Sololearn](https://www.sololearn.com/Course/Java/) (ENGLISH)
 
-### Encapsulation
+</br>
+### I. Encapsulation ###
 
 Encapsulation is made through keywords that define how the object (method, attribute, ...) can be accessed.
 We call it encapsulation because it can isolate and control data access.
@@ -83,8 +84,7 @@ Packages are Like the folders where the `.java` file is stored
 It has no restrictions and can be available from anywhere and modified direclty. However the class which it's called from should be instanced before.
 
 #### Other keywords that goes with encapsulation
-
-##### final
+##### 1. final
 
 The final key word should be placed before the type.
 
@@ -92,13 +92,13 @@ The final key word should be placed before the type.
 - For a method, it means it can't be overrided in by a child class. (So an abstract method can't be final) 
 - For a class, it means that a child class can't be created from the final one.
 
-##### static
+##### 2. static
 
 A static field, method or class has a single instance for the whole class that defines it, even if there is no instance of this class in the program. It can so be called from anywhere. </br>
 It should be placed before the final keyword.
+</br></br>
 
-
-### Polymorphism
+### II. Polymorphism ###
 
 Polymorphism refers to the idea of having multiple forms, it occurs with child class and parent class when you inherite or pass a method. Each class can have its own implementation of the same method.
 
@@ -109,8 +109,9 @@ Overriding is *runtime polymorphism* when you change the inherited method (can't
 #### Overloading
 
 Overloading is *compile-time polymorphism* when you declare multiple time the same method but with different input. There's no particular keyword for over loading, only multiple methods with same name but different arguments.
+</br></br>
 
-### Inheritance 
+### III. Inheritance ###
 
 Inheritance refers to the process that enables one class to acquire the methods and variable of a parent class thanks to the `extends` keyword:
 
@@ -138,10 +139,36 @@ The abstract element are to be implemented in the child class when inherited, it
 There's no constructors in an Interface, there's only abstract methods and variables. The interface is set thanks to the `implement` keyword at the definition of the class.</br>
 If you wish to store instanced variables however it is best practice to use an Enum instead.
 
+## Java Libraries
+
+### Collection framework
+
+The collection framework is what is inside the `java.util`. And as its name refers to, it contains a lot :
+
+| Interface | Hash Table | Resizable Array | Balanced Tree | Linked List | Hash Table + Linked List |
+|-----------|------------|-----------------|---------------|-------------|--------------------------|
+| Set       | HashSet    |                 | TreeSet       |             | LinkedHashSet            |
+| List      |            | ArrayList       |               | LinkedList  |                          |
+| Deque     |            | ArrayDeque      |               | LinkedList  |                          |
+| Map       | HashMap    |                 | TreeMap       |             | LinkedHashMap            |
+
 
 ## Automated testing
 
 XUnit and JUnit is used for automated testing on JAVA.
 
-[http://junit.org/junit4/](http://junit.org/junit4/)
-[http://xunit.github.io/](http://xunit.github.io/)
+- [junit](http://junit.org/junit4/)
+- [xunit](http://xunit.github.io/)
+
+## Maven
+
+[Maven](http://maven.apache.org/what-is-maven.html) is a framework developped by Apache that add standards in Java projects. By having the same hierarchy it helps keep a consistent project, manage dependencies and falicitate the build. It is a good way to share information and JAR across multiple projects.
+
+> "Maven, a Yiddish word meaning accumulator of knowledge"
+
+To add Maven on IntelliJ, you can `right click` on the folder name (top left under the menu bar) and then `add Framework support` then select Maven.
+
+Here is a getting startd from the Apache Maven website:
+
+- [Maven getting started in 5 min](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+- [Maven getting started](http://maven.apache.org/guides/getting-started/index.html)

@@ -31,7 +31,7 @@ public class Test {
 
         // String and int
         String word = "w0rd";
-        String[] s = "test /, a5 _ - .(), b5".split("[ _/,-.()]+");
+        String[] s = "tos9t9 zlkm sp /, A5 _ - .(), b5".toLowerCase().split("[^a-h1-8]+");
         System.out.println(s[0] + " " + s[1] + " " + s[2]);
         System.out.println(word.charAt(0));
         System.out.println(Character.getNumericValue(word.charAt(1)));
@@ -41,7 +41,7 @@ public class Test {
         System.out.println((int) character);
         System.out.println((char) 97);
         try {
-            System.out.println("a".getBytes("ASCII")[0]);
+            System.out.println("a1".getBytes("ASCII")[0]);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
