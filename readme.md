@@ -32,7 +32,8 @@ The JDK includes, it can be called inside a command prompt:
 - The Java Archiving Tool - **jar**
 - the Java Debugging Tool  - **jdb**
 
-When installing the JDK, don't forget to add the JAVA_HOME (path to the JRE - Java Runtime Environment) as an environment variable. 
+When installing the JDK, don't forget to add the JAVA_HOME (path to the JDK and JRE - Java Runtime Environment) as an environment variable. 
+I have added `setPathJava.bat` script to update the JAVA_HOME. The path variable is only change for the current cmd session. (Need to update the key registry to make it definitive).
 
 ### Get an IDE
 IDE for Integrated Development Environments. </br>
