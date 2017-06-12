@@ -40,7 +40,11 @@ IDE for Integrated Development Environments. </br>
 I'll be trying [IntelliJ: Community version](https://www.jetbrains.com/idea/#chooseYourEdition) by Jet Brain which has pro feature. 
 IF you click on the link you should be able to download it (community version is free).
 
-## Getting started with IntelliJ
+## IntelliJ
+
+IntelliJ is an IDE developped by [JetBrain](https://www.jetbrains.com/idea/), the community version is free and comes with a lot of pro features (that might be overkill in some cases).
+
+### Getting started with IntelliJ
 First you have to create a Java project: File **>** New **>** Project.
 When a screen pops up, you need to specify the link to your project SDK. 
 
@@ -53,18 +57,92 @@ To compile the code, you will need to hit the `build` button (top right) or `ctr
 To Run it, will have to edit configurations (next to the build button). Click on the arrow and select `Edit Configurations`. </br>
 A window appear, on the left side there's a dropdown menu (called `Defaults`). Click on it and select `Application`. On the right panel, add a name and the main class you've just created. Press ok to validate. 
 
-Now that you have that set up you should see a green arrow next to that field (next to the build button). If you click on it, it will run your project and you'll see on the botton a split screen with the output (like on Netbeans, yeah!).
+Now that you have that set up you should see a green arrow next to that field (next to the build button). If you click on it, it will run your project and you'll see on the bottom a split screen with the output (like Netbeans, yeah!).
 
+### Maven on IntelliJ
+
+#### What is maven
+
+[Maven](http://maven.apache.org/what-is-maven.html) is a framework developped by Apache that add standards in Java projects. By having the same hierarchy it helps keep a consistent project, manage dependencies and falicitate the build. It is a good way to share information and JAR across multiple projects.
+
+> "Maven, a Yiddish word meaning accumulator of knowledge"
+
+Here is a getting startd from the Apache Maven website:
+
+- [Maven getting started in 5 min](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+- [Maven getting started](http://maven.apache.org/guides/getting-started/index.html)
+
+### Maven on IntelliJ
+
+So to use Maven with IntelliJ, you first need to right click on a project and select **Add framework support ...**.
+
+A new page will show up and you can select *Maven*, it will automatically reformat your code structure to adapt to Maven. A **pom.xml** will be created.
+
+:warning: Sometime IntelliJ push the compiler to v1.5 [#2](https://github.com/Sylhare/Java_hero/issues/2). There is two way to specify the right language for the compiler in the pom.xml file. Either add or modify the already existing `<build>` tag in the `<project>` tag : 
+
+```html
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+```
+
+The above solution worked great on IntelliJ. You can also can try this solution from [Apache Maven](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html).
+
+
+### Setting up dependencies, add external librairies
+
+You can add external librairies to your Java project. Here are two ways of doing in with IntelliJ.
+
+####  with JAR
+
+You can download the JAR file of the external librairy and add it to your project. For that you can do go on **File** > **Project Structure** (or `[ALT] + [ctrl] + [shift] + [S]`).
+
+Once there you can click on the green plus and add the .jar file. (Save the Jar in your place for librairies such as *lib/directory*).
+
+Now you should be all set, you can now import the library:
+
+```java
+//Importing a librairy
+import main.java.com.librairy;
+```
+
+#### with Maven
+
+To add an external librairy to your project, just copy and past the `<dependency>` into `<dependencies>` inside `<project>` of your pom.xml
+
+Here for example for the [Guava](https://github.com/google/guava) librairy from Google:
+
+```html
+<project>
+	<!-- information about your project -->
+	
+	<dependencies>
+	        <dependency>
+	            <groupId>com.google.guava</groupId>
+	            <artifactId>guava</artifactId>
+	            <version>22.0</version>
+	        </dependency>
+	<dependencies>
+</project>
+```
 
 ## What's so special coding in JAVA
 
 Here are some key features that are good to keep in mind. If one's want to learn, I would suggest going on these websites:
 
-- [Open Classroom](https://openclassrooms.com/courses/apprenez-a-programmer-en-java) (FRENCH)
-- [Sololearn](https://www.sololearn.com/Course/Java/) (ENGLISH)
+- [Open Classroom](https://openclassrooms.com/courses/apprenez-a-programmer-en-java) (French)
+- [Sololearn](https://www.sololearn.com/Course/Java/) (English)
 
-</br>
-### I. Encapsulation ###
+
+### I. Encapsulation
 
 Encapsulation is made through keywords that define how the object (method, attribute, ...) can be accessed.
 We call it encapsulation because it can isolate and control data access.
@@ -99,7 +177,7 @@ A static field, method or class has a single instance for the whole class that d
 It should be placed before the final keyword.
 </br></br>
 
-### II. Polymorphism ###
+### II. Polymorphism
 
 Polymorphism refers to the idea of having multiple forms, it occurs with child class and parent class when you inherite or pass a method. Each class can have its own implementation of the same method.
 
@@ -112,7 +190,7 @@ Overriding is *runtime polymorphism* when you change the inherited method (can't
 Overloading is *compile-time polymorphism* when you declare multiple time the same method but with different input. There's no particular keyword for over loading, only multiple methods with same name but different arguments.
 </br></br>
 
-### III. Inheritance ###
+### III. Inheritance
 
 Inheritance refers to the process that enables one class to acquire the methods and variable of a parent class thanks to the `extends` keyword:
 
@@ -161,15 +239,3 @@ XUnit and JUnit is used for automated testing on JAVA.
 - [junit](http://junit.org/junit4/)
 - [xunit](http://xunit.github.io/)
 
-## Maven
-
-[Maven](http://maven.apache.org/what-is-maven.html) is a framework developped by Apache that add standards in Java projects. By having the same hierarchy it helps keep a consistent project, manage dependencies and falicitate the build. It is a good way to share information and JAR across multiple projects.
-
-> "Maven, a Yiddish word meaning accumulator of knowledge"
-
-To add Maven on IntelliJ, you can `right click` on the folder name (top left under the menu bar) and then `add Framework support` then select Maven.
-
-Here is a getting startd from the Apache Maven website:
-
-- [Maven getting started in 5 min](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
-- [Maven getting started](http://maven.apache.org/guides/getting-started/index.html)
