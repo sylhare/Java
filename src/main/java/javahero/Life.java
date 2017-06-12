@@ -45,9 +45,9 @@ public class Life extends Thread {
         switch (i) {
             case 1:  this.gifts.add(factsFreeMeal());
                 break;
-            case 2: facts_sayings("Sure is Chilly today");
+            case 2: factsSayings("Sure is Chilly today");
                 break;
-            default: facts_sayings("Such a peaceful day");
+            default: factsSayings("Such a peaceful day");
                 break;
         }
     }
@@ -60,7 +60,7 @@ public class Life extends Thread {
         return new Food();
     }
 
-    private void facts_sayings(String words){
+    private void factsSayings(String words){
         System.out.println(words);
     }
 }

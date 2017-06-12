@@ -202,7 +202,7 @@ The parent constructor (which are called when the class is instanced) can't be i
 
 The `super()` method can be used to call the parent constructor directly. You can also use the `super` keyword to call directly methods or variables from the parent class (for example `super.method()` or `super.value`)
 
-### abstraction
+### IV. Abstraction
 
 The concept of abstraction is that we focus on essential qualities, rather than the specific characteristics of one particular example.
 
@@ -231,6 +231,9 @@ The collection framework is what is inside the `java.util`. And as its name refe
 | Deque     |            | ArrayDeque      |               | LinkedList  |                          |
 | Map       | HashMap    |                 | TreeMap       |             | LinkedHashMap            |
 
+There are more graphical information available in [Java_here/resources](https://github.com/Sylhare/Java_hero/tree/master/resources) :
+
+![Collection framework](https://github.com/Sylhare/Java_hero/blob/master/resources/Collection%20Framework.JPG)
 
 ## Automated testing
 

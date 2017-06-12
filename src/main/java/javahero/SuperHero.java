@@ -87,6 +87,14 @@ public class SuperHero extends Human {
         return s + "\n";
     }
 
+    /**
+     * To know if the superhero has discover is power
+     * @return isRevealed (boolean)
+     */
+    public boolean hasSuperPower(){
+        return isRevealed;
+    }
+
 /*
     @Override
     public void heal() {
@@ -126,16 +134,9 @@ public class SuperHero extends Human {
         return this.getHeroName() + " - " + this.name[0] + " : " + super.toString();
     }
 
-    /**
-     * To know if the superhero has discover is power
-     * @return isRevealed value
-     */
-    public boolean hasSuperPower(){
-        return isRevealed;
-    }
 
     /**
-     * Inner Class Power
+     * Inner Class Power of the Super Hero class
      */
     public class Power {
         private String name;

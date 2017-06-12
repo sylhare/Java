@@ -1,7 +1,7 @@
 package javahero;
 
 /**
- * Created by sylhare on 2017-04-25.
+ *
  * Implementing the Runnable Interface makes it possible to call multiple threads
  * with:
  * Thread t = new Thread(new javahero.Disaster());

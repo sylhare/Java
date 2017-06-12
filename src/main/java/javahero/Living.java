@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  *
- * javahero.Living abstract class, to describe what a normal javahero.Living can do
+ * Living abstract class, to describe what a normal Living can do
  *
  *
  */
