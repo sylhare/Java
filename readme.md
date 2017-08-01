@@ -7,7 +7,6 @@ Here is a little playground for Java development.
 
 The java language developped by Oracle is:
 
-
 - Portbale, robust and dynamic
 - Plateform independant
 - Runs on the JVM (Java Virtual Machine) which is system dependant
@@ -19,7 +18,6 @@ With the JVM, you can write `.java` files, that get compiled into Java bytecodes
 OS: Windows 7+
 
 I first learned with the NetBeans Bundle: [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html) which had the Oracle Jave SDK and the IDE.
-
 
 ### Get the SDK
 SDK for Software Development Kit also called JDK - Java Development Kit.
@@ -39,6 +37,20 @@ I have added `setPathJava.bat` script to update the JAVA_HOME. The path variable
 IDE for Integrated Development Environments. </br>
 I'll be trying [IntelliJ: Community version](https://www.jetbrains.com/idea/#chooseYourEdition) by Jet Brain which has pro feature. 
 IF you click on the link you should be able to download it (community version is free).
+
+## Maven
+
+#### What is maven
+
+[Maven](http://maven.apache.org/what-is-maven.html) is a framework developped by Apache that add standards in Java projects. By having the same hierarchy it helps keep a consistent project, manage dependencies and falicitate the build. It is a good way to share information and JAR across multiple projects.
+
+> "Maven, a Yiddish word meaning accumulator of knowledge"
+
+Here is a getting startd from the Apache Maven website:
+
+- [Maven getting started in 5 min](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+- [Maven getting started](http://maven.apache.org/guides/getting-started/index.html)
+
 
 ## IntelliJ
 
@@ -61,20 +73,7 @@ Now that you have that set up you should see a green arrow next to that field (n
 
 ### Maven on IntelliJ
 
-#### What is maven
-
-[Maven](http://maven.apache.org/what-is-maven.html) is a framework developped by Apache that add standards in Java projects. By having the same hierarchy it helps keep a consistent project, manage dependencies and falicitate the build. It is a good way to share information and JAR across multiple projects.
-
-> "Maven, a Yiddish word meaning accumulator of knowledge"
-
-Here is a getting startd from the Apache Maven website:
-
-- [Maven getting started in 5 min](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
-- [Maven getting started](http://maven.apache.org/guides/getting-started/index.html)
-
-### Maven on IntelliJ
-
-So to use Maven with IntelliJ, you first need to right click on a project and select **Add framework support ...**.
+So to use [Maven](https://github.com/Sylhare/Java_hero#Maven) with IntelliJ, you first need to right click on a project and select **Add framework support ...**.
 
 A new page will show up and you can select *Maven*, it will automatically reformat your code structure to adapt to Maven. A **pom.xml** will be created.
 
@@ -123,7 +122,6 @@ Here for example for the [Guava](https://github.com/google/guava) librairy from 
 ```html
 <project>
 	<!-- information about your project -->
-	
 	<dependencies>
 	        <dependency>
 	            <groupId>com.google.guava</groupId>
@@ -134,13 +132,15 @@ Here for example for the [Guava](https://github.com/google/guava) librairy from 
 </project>
 ```
 
+
+--------------------------------------------------------------------------------------------------------------------------
+
 ## What's so special coding in JAVA
 
 Here are some key features that are good to keep in mind. If one's want to learn, I would suggest going on these websites:
 
 - [Open Classroom](https://openclassrooms.com/courses/apprenez-a-programmer-en-java) (French)
 - [Sololearn](https://www.sololearn.com/Course/Java/) (English)
-
 
 ### I. Encapsulation
 
