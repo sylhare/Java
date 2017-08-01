@@ -51,6 +51,56 @@ Here is a getting startd from the Apache Maven website:
 - [Maven getting started in 5 min](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 - [Maven getting started](http://maven.apache.org/guides/getting-started/index.html)
 
+#### The pom.xml file
+
+When using Maven a `pom.xml` file is created to manage the dependencies of the project. Here is a basic example of what it could look like:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>groupId</groupId>
+    <artifactId>Java_hero</artifactId>
+	<packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+  <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>22.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.6</version>
+        </dependency>
+    </dependencies>
+
+</project>
+
+```
+Here are some [details](https://spring.io/guides/gs/maven/) on all of the shown tags:
+
+- `<modelVersion>`: POM model version (always 4.0.0).
+- `<groupId>`: Group or organization that the project belongs to. Often expressed as an inverted domain name.
+- `<artifactId>`: Name to be given to the project’s library artifact (for example, the name of its JAR or WAR file).
+- `<version>`: Version of the project that is being built.
+- `<packaging>`: How the project should be packaged (Optional tag). Defaults to "jar" for JAR file packaging. Use "war" for WAR file packaging.
+- `<dependencies>`: Dependencies to be installed or loaded with the project
+- `<build>``: Define what will be built and how.
+
 
 ## IntelliJ
 
@@ -132,8 +182,7 @@ Here for example for the [Guava](https://github.com/google/guava) librairy from 
 </project>
 ```
 
-
---------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 
 ## What's so special coding in JAVA
 
