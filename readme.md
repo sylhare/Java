@@ -101,6 +101,18 @@ Here are some [details](https://spring.io/guides/gs/maven/) on all of the shown 
 - `<dependencies>`: Dependencies to be installed or loaded with the project
 - `<build>``: Define what will be built and how.
 
+### Work with Maven
+
+First make sure maven is installed by running:
+
+	mvn -v
+
+Maven can now be used to build the project:
+
+- `mvn compile` to run the test, compile the project, install the dependencies, create the library package.
+- `mvn package` to create the library package (such as a JAR file for example)
+- `mvn test` to use the maven "surefire" plugin to run unit test in the `src/test/jave` folder with a matching `*Test`name
+- `mvn install` to add your project's JAR file to your local repository (like a `compile` but making it ready as a dependency to be referenced by another project
 
 ## IntelliJ
 
@@ -123,7 +135,7 @@ Now that you have that set up you should see a green arrow next to that field (n
 
 ### Maven on IntelliJ
 
-So to use [Maven](https://github.com/Sylhare/Java_hero#Maven) with IntelliJ, you first need to right click on a project and select **Add framework support ...**.
+So to use [Maven](https://github.com/Sylhare/Java_hero#maven) with IntelliJ, you first need to right click on a project and select **Add framework support ...**.
 
 A new page will show up and you can select *Maven*, it will automatically reformat your code structure to adapt to Maven. A **pom.xml** will be created.
 
