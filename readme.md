@@ -19,7 +19,7 @@ OS: Windows 7+
 
 I first learned with the NetBeans Bundle: [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html) which had the Oracle Jave SDK and the IDE.
 
-### Get the SDK
+### Get and Install the SDK
 SDK for Software Development Kit also called JDK - Java Development Kit.
 You can get the Oracle Java SDK [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Choose the one for your system, here for windows. </br>
 There's the Oracle JDK (Comercial, Stable with proprietary code from Oracle) and the Open JDK (Open source, maintained by Oracle).
@@ -30,8 +30,14 @@ The JDK includes, it can be called inside a command prompt:
 - The Java Archiving Tool - **jar**
 - the Java Debugging Tool  - **jdb**
 
-When installing the JDK, don't forget to add the JAVA_HOME (path to the JDK and JRE - Java Runtime Environment) as an environment variable. 
-I have added `setPathJava.bat` script to update the JAVA_HOME. The path variable is only change for the current cmd session. (Need to update the key registry to make it definitive).
+When installing the JDK, don't forget to add the `JAVA_HOME` (path to the JDK and JRE - Java Runtime Environment) as an environment variable. 
+
+> Environment variables in windows are accessed via the start up menu (windows key) then:
+>
+> - right click on computer > properties > advance system settings 
+> - Click on the environment variable button
+
+I have added `setPathJava.bat` script to update the `JAVA_HOME`. The path variable is only changed for the current cmd session. (Need to update the key registry to make it definitive).
 
 ### Get an IDE
 IDE for Integrated Development Environments. </br>
@@ -40,13 +46,40 @@ IF you click on the link you should be able to download it (community version is
 
 ## Maven
 
-#### What is maven
+### What is maven
 
 [Maven](http://maven.apache.org/what-is-maven.html) is a framework developped by Apache that add standards in Java projects. By having the same hierarchy it helps keep a consistent project, manage dependencies and falicitate the build. It is a good way to share information and JAR across multiple projects.
 
 > "Maven, a Yiddish word meaning accumulator of knowledge"
 
-Here is a getting startd from the Apache Maven website:
+### Installation
+
+Here are the steps to install Maven on [Windows](https://www.mkyong.com/maven/how-to-install-maven-in-windows/):
+
+- Make sure you've intalled java and set `JAVA_HOME`
+- Download maven at [maven.apache.org](http://maven.apache.org/download.cgi)
+- Unzip it in C:\Program Files\Apache\maven
+- Add this location to the `M2_HOME` and `MAVEN_HOME` environment variable
+- Add `%M2_HOME%\bin` to the `PATH` environment variable 
+	- :warning: no space between the variable path separator `;` and `%M2_HOME%\bin`
+
+
+#### Maven commands
+
+First make sure maven is installed by running:
+
+	mvn -version
+
+Maven can now be used to build the project:
+
+- `mvn compile` to run the test, compile the project, install the dependencies, create the library package.
+- `mvn package` to create the library package (such as a JAR file for example)
+- `mvn test` to use the maven "surefire" plugin to run unit test in the `src/test/jave` folder with a matching `*Test`name
+- `mvn install` to add your project's JAR file to your local repository (like a `compile` but making it ready as a dependency to be referenced by another project
+
+### Getting started
+
+Here is a getting started from the Apache Maven website:
 
 - [Maven getting started in 5 min](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 - [Maven getting started](http://maven.apache.org/guides/getting-started/index.html)
@@ -55,7 +88,7 @@ Here is a getting startd from the Apache Maven website:
 
 When using Maven a `pom.xml` file is created to manage the dependencies of the project. Here is a basic example of what it could look like:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -99,20 +132,8 @@ Here are some [details](https://spring.io/guides/gs/maven/) on all of the shown 
 - `<version>`: Version of the project that is being built.
 - `<packaging>`: How the project should be packaged (Optional tag). Defaults to "jar" for JAR file packaging. Use "war" for WAR file packaging.
 - `<dependencies>`: Dependencies to be installed or loaded with the project
-- `<build>``: Define what will be built and how.
+- `<build>`: Define what will be built and how.
 
-### Work with Maven
-
-First make sure maven is installed by running:
-
-	mvn -v
-
-Maven can now be used to build the project:
-
-- `mvn compile` to run the test, compile the project, install the dependencies, create the library package.
-- `mvn package` to create the library package (such as a JAR file for example)
-- `mvn test` to use the maven "surefire" plugin to run unit test in the `src/test/jave` folder with a matching `*Test`name
-- `mvn install` to add your project's JAR file to your local repository (like a `compile` but making it ready as a dependency to be referenced by another project
 
 ## IntelliJ
 
