@@ -59,9 +59,9 @@ Here are the steps to install Maven on [Windows](https://www.mkyong.com/maven/ho
 - Make sure you've intalled java and set `JAVA_HOME`
 - Download maven at [maven.apache.org](http://maven.apache.org/download.cgi)
 - Unzip it in C:\Program Files\Apache\maven
-- Add this location to the `M2_HOME` and `MAVEN_HOME` environment variable
-- Add `%M2_HOME%\bin` to the `PATH` environment variable 
-	- :warning: no space between the variable path separator `;` and `%M2_HOME%\bin`
+- Add this location to the `M3_HOME` and `MAVEN_HOME` environment variable
+- Add `%M3_HOME%\bin` to the `PATH` environment variable 
+	- :warning: no space between the variable path separator `;` and `%M3_HOME%\bin`
 
 
 #### Maven commands
