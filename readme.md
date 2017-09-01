@@ -76,6 +76,7 @@ Maven can now be used to build the project:
 - `mvn package` to create the library package (such as a JAR file for example)
 - `mvn test` to use the maven "surefire" plugin to run unit test in the `src/test/jave` folder with a matching `*Test`name
 - `mvn install` to add your project's JAR file to your local repository (like a `compile` but making it ready as a dependency to be referenced by another project
+- `mvn clean install` to copy the librairies if the first one fails.
 
 ### Getting started
 
