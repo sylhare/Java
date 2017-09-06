@@ -43,7 +43,7 @@ public class ListTest {
     }
 
     /**
-     * to fill the javahero.Test list
+     * to fill the javahero.JavaHeroTest list
      */
     public static void setUp() {
         aTestList = new ArrayList<String>();
