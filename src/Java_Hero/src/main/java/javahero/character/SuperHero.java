@@ -1,10 +1,13 @@
-package javahero;
+package javahero.character;
+
+import javahero.behaviour.FirstAid;
+import javahero.behaviour.Regeneration;
+import javahero.character.Human;
 
 import java.util.ArrayList;
 
 /**
  * Super Hero Class
- *
  */
 public class SuperHero extends Human {
     private ArrayList<Power> powers = new ArrayList<>();
@@ -15,8 +18,8 @@ public class SuperHero extends Human {
      * Basic Constructor with default values
      */
     public SuperHero() {
-
         this.enhance(50, 50, 50, 50);
+        this.healing = new Regeneration();
     }
 
     /**
@@ -27,7 +30,7 @@ public class SuperHero extends Human {
      */
     public SuperHero(String heroName, String name) {
         this();
-        this.heroName = heroName;
+        this.setHeroName(heroName);
         this.name[0] = name;
     }
 
@@ -39,7 +42,7 @@ public class SuperHero extends Human {
      * @param strength
      * @param intel
      */
-    private void enhance(int life, int weight, int strength, int intel){
+    private void enhance(int life, int weight, int strength, int intel) {
         this.life = this.life + life;
         this.weight = this.weight + weight;
         this.strength = this.strength + strength;
@@ -47,13 +50,12 @@ public class SuperHero extends Human {
     }
 
     /**
-     *
      * Create a super power for the super hero
      *
      * @param name
      * @param effects
      */
-    public void revealPower(String name, int[] effects){
+    public void revealPower(String name, int[] effects) {
         this.isRevealed = true;
         Power power = new Power(name, effects);
         this.powers.add(power);
@@ -62,7 +64,6 @@ public class SuperHero extends Human {
     }
 
     /**
-     *
      * @return the hero name
      */
     public String getHeroName() {
@@ -79,59 +80,34 @@ public class SuperHero extends Human {
     }
 
     public String getPowers() {
-        String s = "";
-        for (int i = 0; i < this.powers.size(); i++){
-            s += this.powers.get(i).toString();
+        String s = "not discorvered";
+        if (hasSuperPower()) {
+            s = "";
+            for (int i = 0; i < this.powers.size(); i++) {
+                s += this.powers.get(i).toString();
+            }
         }
-
         return s + "\n";
     }
 
     /**
-     * To know if the superhero has discover is power
+     * To know if the superhero has discovered is power
+     *
      * @return isRevealed (boolean)
      */
-    public boolean hasSuperPower(){
+    public boolean hasSuperPower() {
         return isRevealed;
     }
 
-/*
     @Override
-    public void heal() {
-
-    }
-
-    @Override
-    public void eat(Food food) {
-        super.eat(food);
-
-    }
-
-    @Override
-    public void workout() {
-
-    }
-
-    @Override
-    public void study() {
-
-    }
-
-    @Override
-    public void fight() {
-
-    }*/
-
-    @Override
-    public void talk(String text){
+    public void talk(String text) {
         String t = text.toUpperCase();  //Super heroes talk in upper case
         System.out.println(t);
     }
 
     @Override
-    public String toString()
-    {
-        return this.getHeroName() + " - " + this.name[0] + " : " + super.toString();
+    public String toString() {
+        return this.getHeroName() + " - " + this.name[0] + " : " + this.getPowers() + " \n" + super.toString();
     }
 
 
@@ -144,31 +120,30 @@ public class SuperHero extends Human {
 
         /**
          * Constructor of Power
+         *
          * @param name
          * @param effects
          */
-        private Power(String name, int[] effects){
+        private Power(String name, int[] effects) {
             this.name = name;
             this.effects = effects;
         }
 
         /**
-         *
          * @return the power name
          */
-        public String getName(){
+        public String getName() {
             return this.name;
         }
 
         /**
-         *
-         * @return a String decribing the power
+         * @return a String describing the power
          */
         @Override
-        public String toString(){
+        public String toString() {
             String s = this.getName() + ": ";
 
-            for (int i = 0; i < this.effects.length; i++){
+            for (int i = 0; i < this.effects.length; i++) {
                 s += effects[i] + " ";
             }
 

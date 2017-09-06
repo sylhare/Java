@@ -1,4 +1,8 @@
-package javahero;
+package javahero.character;
+
+import javahero.Food;
+import javahero.behaviour.FirstAid;
+import javahero.behaviour.Heal;
 
 import java.util.ArrayList;
 
@@ -18,12 +22,39 @@ public abstract class Living {
     public String[] name = new String[2];
     public ArrayList<String> belongings = new ArrayList<>(slot);
 
+    public Heal healing = new FirstAid();
+
     /**
-     * 
-     * Should increase health
-     * 
+     * Default constructor
      */
-    public abstract void heal();
+    public Living(){}
+
+    /**
+     *
+     * Constructor for a basic Living with healing behaviour
+     *
+     * @param life
+     * @param weight
+     * @param strength
+     * @param intel
+     * @param healing
+     */
+    public Living(int life, int weight, int strength, int intel, Heal healing){
+        this.life = life;
+        this.weight = weight;
+        this.strength = strength;
+        this.intel = intel;
+        this.healing = healing;
+    }
+
+    /**
+     * Default healing statement for a living thing
+     *
+     * @return integer
+     */
+    public Integer heal(){
+        return healing.heal();
+    }
 
     /**
      * 

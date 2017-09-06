@@ -1,4 +1,8 @@
-package javahero;
+package javahero.character;
+
+import javahero.Food;
+import javahero.Settings;
+import javahero.behaviour.Heal;
 
 /**
  *
@@ -15,6 +19,14 @@ public class Human extends Living {
     }
 
     /**
+     *  Create a default human changing its healing
+     * @param healing
+     */
+    public Human (Heal healing){
+        super(healing);
+    }
+
+    /**
      *
      * Constructor for a basic human
      *
@@ -23,11 +35,8 @@ public class Human extends Living {
      * @param strength
      * @param intel
      */
-    public Human(int life, int weight, int strength, int intel){
-       this.life = life;
-       this.weight = weight;
-       this.strength = strength;
-       this.intel = intel;
+    public Human(int life, int weight, int strength, int intel, Heal healing){
+        super(life, weight, strength, intel, healing);
     }
 
     /**
@@ -42,12 +51,12 @@ public class Human extends Living {
     public void hello(String text){
         System.out.println(text);
     }
-
+/*
     @Override
     public void heal() {
         this.life += Settings.BONUS.getValue();
     }
-
+*/
     @Override
     public void eat(Food food) {
         this.weight = food.getFat();

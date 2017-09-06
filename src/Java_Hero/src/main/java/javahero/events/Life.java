@@ -1,4 +1,8 @@
-package javahero;
+package javahero.events;
+
+import javahero.Food;
+import javahero.Settings;
+import javahero.events.Disaster;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -8,7 +12,7 @@ import java.util.Random;
  *
  * Extending a class from the thread one allow to create a thread
  * The run function will be called when using the "start()" method to start a thread:
- * javahero.Life obj = new javahero.Life();
+ * javahero.events.Life obj = new javahero.events.Life();
  * obj.start();
  *
  */
