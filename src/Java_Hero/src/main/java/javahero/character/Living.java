@@ -30,6 +30,13 @@ public abstract class Living {
     public Living(){}
 
     /**
+     * Default constructor with healing behaviour
+     */
+    public Living(Heal healing){
+        this.healing = healing;
+    }
+
+    /**
      *
      * Constructor for a basic Living with healing behaviour
      *
@@ -46,14 +53,12 @@ public abstract class Living {
         this.intel = intel;
         this.healing = healing;
     }
-
+/*
     /**
-     * Default healing statement for a living thing
-     *
-     * @return integer
+     * Heal, makes the life go up
      */
-    public Integer heal(){
-        return healing.heal();
+    public void heal(){
+        this.life += healing.heal();
     }
 
     /**

@@ -51,12 +51,7 @@ public class Human extends Living {
     public void hello(String text){
         System.out.println(text);
     }
-/*
-    @Override
-    public void heal() {
-        this.life += Settings.BONUS.getValue();
-    }
-*/
+
     @Override
     public void eat(Food food) {
         this.weight = food.getFat();
