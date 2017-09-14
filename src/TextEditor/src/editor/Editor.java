@@ -1,3 +1,5 @@
+package editor;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -5,7 +7,7 @@ import java.util.Scanner;
 import java.io.*;
 
 /**
- * Editor creates a small text editor in Java where you can open, edit and save text documents
+ * editor.Editor creates a small text editor in Java where you can open, edit and save text documents
  */
 public class Editor extends JFrame implements ActionListener {
     // Menu
@@ -18,11 +20,11 @@ public class Editor extends JFrame implements ActionListener {
     private TextArea textArea = new TextArea("", 0, 0, TextArea.SCROLLBARS_VERTICAL_ONLY);
 
     /**
-     * Creates the Text Editor
+     * Creates the Text editor.Editor
      */
     public Editor() {
         this.setSize(500, 300);
-        this.setTitle("Text Editor");
+        this.setTitle("Text editor.Editor");
         setDefaultCloseOperation(EXIT_ON_CLOSE); // Exit on the cross [x]
 
         this.textArea.setFont(new Font("Sanserif", Font.PLAIN, 12));
@@ -72,7 +74,6 @@ public class Editor extends JFrame implements ActionListener {
                 System.out.println("Unmapped Action");
                 break;
         }
-
     }
 
     /**
@@ -93,7 +94,6 @@ public class Editor extends JFrame implements ActionListener {
                 System.out.println(e.getMessage());
             }
         }
-
     }
 
     /**

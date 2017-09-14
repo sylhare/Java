@@ -5,9 +5,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../TextEditor/src/Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../TextEditor/src/Main.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TextEditor/out/artifacts/TextEditor_jar/TextEditor.jar" afterPath="$PROJECT_DIR$/../TextEditor/out/artifacts/TextEditor_jar/TextEditor.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/javahero/character/Human.java" afterPath="$PROJECT_DIR$/src/main/java/javahero/character/Human.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/javahero/character/Living.java" afterPath="$PROJECT_DIR$/src/main/java/javahero/character/Living.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TextEditor/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../TextEditor/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TextEditor/out/production/TextEditor/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/../TextEditor/out/production/TextEditor/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TextEditor/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/../TextEditor/src/META-INF/MANIFEST.MF" />
@@ -172,9 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -377,6 +371,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -790,7 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,38 +910,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/Defensive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/Offensive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/Support.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/PowerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/Defensive.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/Offensive.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/Support.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/PowerType.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/javahero/powertype/f.java" />
   </component>
   <component name="masterDetails">

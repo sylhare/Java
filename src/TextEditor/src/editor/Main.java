@@ -1,3 +1,5 @@
+package editor;
+
 /**
  * Main class of the text editor, when the main() is a run, the text editor will show up.
  */
