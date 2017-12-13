@@ -135,6 +135,19 @@ Here are some [details](https://spring.io/guides/gs/maven/) on all of the shown 
 - `<dependencies>`: Dependencies to be installed or loaded with the project
 - `<build>`: Define what will be built and how.
 
+## Gradle
+
+[Gradle](https://gradle.org/) is an open source build automation system that builds upon the concepts of Apache Ant and Apache Maven and introduces a Groovy-based domain-specific language (DSL) instead of the XML form used by Apache Maven for declaring the project configuration
+
+### Installation
+
+- [Installation](https://gradle.org/install/)
+- [Install on Windows](http://bryanlor.com/blog/gradle-tutorial-how-install-gradle-windows)
+
+### How to use
+
+- [Gradle User guide](https://docs.gradle.org/4.4/userguide/userguide.html)
+- [Guides](https://gradle.org/guides/)
 
 ## IntelliJ
 
