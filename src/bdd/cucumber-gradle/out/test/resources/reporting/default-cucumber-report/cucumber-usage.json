@@ -1,0 +1,281 @@
+[
+  {
+    "source": "^I wait (\\d+) hour$",
+    "steps": [
+      {
+        "name": "I wait 1 hour",
+        "aggregatedDurations": {
+          "average": 0.000300326,
+          "median": 0.000300326
+        },
+        "durations": [
+          {
+            "duration": 0.00027406,
+            "location": "./src/test/resources/features/belly.feature:9"
+          },
+          {
+            "duration": 0.000326592,
+            "location": "./src/test/resources/features/belly.feature:29"
+          }
+        ]
+      },
+      {
+        "name": "I wait 0 hour",
+        "aggregatedDurations": {
+          "average": 0.000343384,
+          "median": 0.000343384
+        },
+        "durations": [
+          {
+            "duration": 0.000343384,
+            "location": "./src/test/resources/features/belly.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^My belly should not growl$",
+    "steps": [
+      {
+        "name": "My belly should not growl",
+        "aggregatedDurations": {
+          "average": 0.000482056,
+          "median": 0.000482056
+        },
+        "durations": [
+          {
+            "duration": 0.000604732,
+            "location": "./src/test/resources/features/belly.feature:15"
+          },
+          {
+            "duration": 0.00035938,
+            "location": "./src/test/resources/features/belly.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^My belly should growl$",
+    "steps": [
+      {
+        "name": "My belly should growl",
+        "aggregatedDurations": {
+          "average": 0.001652049,
+          "median": 0.001652049
+        },
+        "durations": [
+          {
+            "duration": 0.001652049,
+            "location": "./src/test/resources/features/belly.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I eat (\\d+) \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I eat 5 \"cucumbers\"",
+        "aggregatedDurations": {
+          "average": 0.000443034,
+          "median": 0.000443034
+        },
+        "durations": [
+          {
+            "duration": 0.000328138,
+            "location": "./src/test/resources/features/belly.feature:19"
+          },
+          {
+            "duration": 0.00055793,
+            "location": "./src/test/resources/features/belly.feature:19"
+          }
+        ]
+      },
+      {
+        "name": "I eat 6 \"cucumbers\"",
+        "aggregatedDurations": {
+          "average": 0.000771856,
+          "median": 0.000771856
+        },
+        "durations": [
+          {
+            "duration": 0.000771856,
+            "location": "./src/test/resources/features/belly.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should have (\\d+) \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I should have 7 \"cucumbers\"",
+        "aggregatedDurations": {
+          "average": 0.000363251,
+          "median": 0.000363251
+        },
+        "durations": [
+          {
+            "duration": 0.000363251,
+            "location": "./src/test/resources/features/belly.feature:20"
+          }
+        ]
+      },
+      {
+        "name": "I should have 15 \"cucumbers\"",
+        "aggregatedDurations": {
+          "average": 0.000539544,
+          "median": 0.000539544
+        },
+        "durations": [
+          {
+            "duration": 0.000539544,
+            "location": "./src/test/resources/features/belly.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There are (\\d+) \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "There are 0 \"cucumbers\"",
+        "aggregatedDurations": {
+          "average": 0.000854681,
+          "median": 0.000458022
+        },
+        "durations": [
+          {
+            "duration": 0.002441542,
+            "location": "./src/test/resources/features/belly.feature:5"
+          },
+          {
+            "duration": 0.0004163,
+            "location": "./src/test/resources/features/belly.feature:5"
+          },
+          {
+            "duration": 0.000275525,
+            "location": "./src/test/resources/features/belly.feature:5"
+          },
+          {
+            "duration": 0.000682019,
+            "location": "./src/test/resources/features/belly.feature:5"
+          },
+          {
+            "duration": 0.000458022,
+            "location": "./src/test/resources/features/belly.feature:5"
+          }
+        ]
+      },
+      {
+        "name": "There are 12 \"cucumbers\"",
+        "aggregatedDurations": {
+          "average": 0.000583926,
+          "median": 0.000583926
+        },
+        "durations": [
+          {
+            "duration": 0.000583926,
+            "location": "./src/test/resources/features/belly.feature:18"
+          }
+        ]
+      },
+      {
+        "name": "There are 20 \"cucumbers\"",
+        "aggregatedDurations": {
+          "average": 0.000737455,
+          "median": 0.000737455
+        },
+        "durations": [
+          {
+            "duration": 0.000737455,
+            "location": "./src/test/resources/features/belly.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I have (\\d+) cakes in my belly$",
+    "steps": [
+      {
+        "name": "I have 42 cakes in my belly",
+        "aggregatedDurations": {
+          "average": 0.00058525,
+          "median": 0.00058525
+        },
+        "durations": [
+          {
+            "duration": 0.00058525,
+            "location": "./src/test/resources/features/belly.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "I have 100 cakes in my belly",
+        "aggregatedDurations": {
+          "average": 0.001941328,
+          "median": 0.001941328
+        },
+        "durations": [
+          {
+            "duration": 0.001941328,
+            "location": "./src/test/resources/features/belly.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "I have 50 cakes in my belly",
+        "aggregatedDurations": {
+          "average": 0.000355713,
+          "median": 0.000355713
+        },
+        "durations": [
+          {
+            "duration": 0.000355713,
+            "location": "./src/test/resources/features/belly.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Belly is empty$",
+    "steps": [
+      {
+        "name": "Belly is empty",
+        "aggregatedDurations": {
+          "average": 0.024000185,
+          "median": 0.00048292
+        },
+        "durations": [
+          {
+            "duration": 0.11840969,
+            "location": "./src/test/resources/features/belly.feature:4"
+          },
+          {
+            "duration": 0.000221312,
+            "location": "./src/test/resources/features/belly.feature:4"
+          },
+          {
+            "duration": 0.000323111,
+            "location": "./src/test/resources/features/belly.feature:4"
+          },
+          {
+            "duration": 0.00048292,
+            "location": "./src/test/resources/features/belly.feature:4"
+          },
+          {
+            "duration": 0.000563892,
+            "location": "./src/test/resources/features/belly.feature:4"
+          }
+        ]
+      }
+    ]
+  }
+]

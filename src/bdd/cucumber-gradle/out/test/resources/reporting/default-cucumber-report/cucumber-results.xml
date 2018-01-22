@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0.194617">
+<testcase classname="Belly" name="001 - A few cakes in an hour" time="0.142765">
+<system-out><![CDATA[Given Belly is empty........................................................passed
+And There are 0 "cucumbers".................................................passed
+Given I have 42 cakes in my belly...........................................passed
+When I wait 1 hour..........................................................passed
+Then My belly should growl..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Belly" name="002 - Many cakes in an hour" time="0.012372">
+<system-out><![CDATA[Given Belly is empty........................................................passed
+And There are 0 "cucumbers".................................................passed
+Given I have 100 cakes in my belly..........................................passed
+When I wait 0 hour..........................................................passed
+Then My belly should not growl..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Belly" name="003 - Eating cucumbers" time="0.012149">
+<system-out><![CDATA[Given Belly is empty........................................................passed
+And There are 0 "cucumbers".................................................passed
+Given There are 12 "cucumbers"..............................................passed
+When I eat 5 "cucumbers"....................................................passed
+Then I should have 7 "cucumbers"............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Belly" name="003 - Eating cucumbers 2" time="0.014333">
+<system-out><![CDATA[Given Belly is empty........................................................passed
+And There are 0 "cucumbers".................................................passed
+Given There are 20 "cucumbers"..............................................passed
+When I eat 5 "cucumbers"....................................................passed
+Then I should have 15 "cucumbers"...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Belly" name="004" time="0.012998">
+<system-out><![CDATA[Given Belly is empty........................................................passed
+And There are 0 "cucumbers".................................................passed
+Given I eat 6 "cucumbers"...................................................passed
+When I wait 1 hour..........................................................passed
+But I have 50 cakes in my belly.............................................passed
+Then My belly should not growl..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
