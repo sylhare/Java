@@ -15,3 +15,6 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+# To exclude counting the html reports generated from cucumber test to be taken into account
+*.html linguist-language=Java

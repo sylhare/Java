@@ -1,5 +1,6 @@
 /.idea/
 *.iml
+*.xml
 /target/
 /out/
 /gradle/
