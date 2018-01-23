@@ -5,16 +5,16 @@
       {
         "name": "I wait 1 hour",
         "aggregatedDurations": {
-          "average": 0.001037082,
-          "median": 0.001037082
+          "average": 0.000404853,
+          "median": 0.000404853
         },
         "durations": [
           {
-            "duration": 0.000305179,
+            "duration": 0.000236957,
             "location": "./src/test/resources/features/belly.feature:9"
           },
           {
-            "duration": 0.001768986,
+            "duration": 0.000572749,
             "location": "./src/test/resources/features/belly.feature:29"
           }
         ]
@@ -22,12 +22,12 @@
       {
         "name": "I wait 0 hour",
         "aggregatedDurations": {
-          "average": 0.000250193,
-          "median": 0.000250193
+          "average": 0.000239506,
+          "median": 0.000239506
         },
         "durations": [
           {
-            "duration": 0.000250193,
+            "duration": 0.000239506,
             "location": "./src/test/resources/features/belly.feature:14"
           }
         ]
@@ -40,16 +40,16 @@
       {
         "name": "My belly should not growl",
         "aggregatedDurations": {
-          "average": 0.0002957,
-          "median": 0.0002957
+          "average": 0.000782469,
+          "median": 0.000782469
         },
         "durations": [
           {
-            "duration": 0.000191642,
+            "duration": 0.000903122,
             "location": "./src/test/resources/features/belly.feature:15"
           },
           {
-            "duration": 0.000399758,
+            "duration": 0.000661816,
             "location": "./src/test/resources/features/belly.feature:31"
           }
         ]
@@ -62,12 +62,12 @@
       {
         "name": "My belly should growl",
         "aggregatedDurations": {
-          "average": 0.001887453,
-          "median": 0.001887453
+          "average": 0.001611425,
+          "median": 0.001611425
         },
         "durations": [
           {
-            "duration": 0.001887453,
+            "duration": 0.001611425,
             "location": "./src/test/resources/features/belly.feature:10"
           }
         ]
@@ -80,16 +80,16 @@
       {
         "name": "I eat 5 \"cucumbers\"",
         "aggregatedDurations": {
-          "average": 0.000714374,
-          "median": 0.000714374
+          "average": 0.001035076,
+          "median": 0.001035076
         },
         "durations": [
           {
-            "duration": 0.000932315,
+            "duration": 0.000478432,
             "location": "./src/test/resources/features/belly.feature:19"
           },
           {
-            "duration": 0.000496433,
+            "duration": 0.001591721,
             "location": "./src/test/resources/features/belly.feature:19"
           }
         ]
@@ -97,12 +97,12 @@
       {
         "name": "I eat 6 \"cucumbers\"",
         "aggregatedDurations": {
-          "average": 0.00074565,
-          "median": 0.00074565
+          "average": 0.00066994,
+          "median": 0.00066994
         },
         "durations": [
           {
-            "duration": 0.00074565,
+            "duration": 0.00066994,
             "location": "./src/test/resources/features/belly.feature:28"
           }
         ]
@@ -115,12 +115,12 @@
       {
         "name": "I should have 7 \"cucumbers\"",
         "aggregatedDurations": {
-          "average": 0.00034948,
-          "median": 0.00034948
+          "average": 0.000860494,
+          "median": 0.000860494
         },
         "durations": [
           {
-            "duration": 0.00034948,
+            "duration": 0.000860494,
             "location": "./src/test/resources/features/belly.feature:20"
           }
         ]
@@ -128,12 +128,12 @@
       {
         "name": "I should have 15 \"cucumbers\"",
         "aggregatedDurations": {
-          "average": 0.000361403,
-          "median": 0.000361403
+          "average": 0.000432763,
+          "median": 0.000432763
         },
         "durations": [
           {
-            "duration": 0.000361403,
+            "duration": 0.000432763,
             "location": "./src/test/resources/features/belly.feature:20"
           }
         ]
@@ -146,28 +146,28 @@
       {
         "name": "There are 0 \"cucumbers\"",
         "aggregatedDurations": {
-          "average": 0.000832864,
-          "median": 0.000457417
+          "average": 0.000871986,
+          "median": 0.000399988
         },
         "durations": [
           {
-            "duration": 0.002477842,
+            "duration": 0.002423391,
             "location": "./src/test/resources/features/belly.feature:5"
           },
           {
-            "duration": 0.000221233,
+            "duration": 0.000222787,
             "location": "./src/test/resources/features/belly.feature:5"
           },
           {
-            "duration": 0.000388503,
+            "duration": 0.000330918,
             "location": "./src/test/resources/features/belly.feature:5"
           },
           {
-            "duration": 0.000457417,
+            "duration": 0.000982846,
             "location": "./src/test/resources/features/belly.feature:5"
           },
           {
-            "duration": 0.000619329,
+            "duration": 0.000399988,
             "location": "./src/test/resources/features/belly.feature:5"
           }
         ]
@@ -175,12 +175,12 @@
       {
         "name": "There are 12 \"cucumbers\"",
         "aggregatedDurations": {
-          "average": 0.00299472,
-          "median": 0.00299472
+          "average": 0.001773619,
+          "median": 0.001773619
         },
         "durations": [
           {
-            "duration": 0.00299472,
+            "duration": 0.001773619,
             "location": "./src/test/resources/features/belly.feature:18"
           }
         ]
@@ -188,12 +188,12 @@
       {
         "name": "There are 20 \"cucumbers\"",
         "aggregatedDurations": {
-          "average": 0.001940437,
-          "median": 0.001940437
+          "average": 0.001550203,
+          "median": 0.001550203
         },
         "durations": [
           {
-            "duration": 0.001940437,
+            "duration": 0.001550203,
             "location": "./src/test/resources/features/belly.feature:18"
           }
         ]
@@ -206,12 +206,12 @@
       {
         "name": "I have 42 cakes in my belly",
         "aggregatedDurations": {
-          "average": 0.000826696,
-          "median": 0.000826696
+          "average": 0.000795924,
+          "median": 0.000795924
         },
         "durations": [
           {
-            "duration": 0.000826696,
+            "duration": 0.000795924,
             "location": "./src/test/resources/features/belly.feature:8"
           }
         ]
@@ -219,12 +219,12 @@
       {
         "name": "I have 100 cakes in my belly",
         "aggregatedDurations": {
-          "average": 0.000483212,
-          "median": 0.000483212
+          "average": 0.000621104,
+          "median": 0.000621104
         },
         "durations": [
           {
-            "duration": 0.000483212,
+            "duration": 0.000621104,
             "location": "./src/test/resources/features/belly.feature:13"
           }
         ]
@@ -232,12 +232,12 @@
       {
         "name": "I have 50 cakes in my belly",
         "aggregatedDurations": {
-          "average": 0.00199718,
-          "median": 0.00199718
+          "average": 0.001966199,
+          "median": 0.001966199
         },
         "durations": [
           {
-            "duration": 0.00199718,
+            "duration": 0.001966199,
             "location": "./src/test/resources/features/belly.feature:30"
           }
         ]
@@ -250,28 +250,28 @@
       {
         "name": "Belly is empty",
         "aggregatedDurations": {
-          "average": 0.027684887,
-          "median": 0.000333894
+          "average": 0.027005224,
+          "median": 0.000286568
         },
         "durations": [
           {
-            "duration": 0.137230205,
+            "duration": 0.133471699,
             "location": "./src/test/resources/features/belly.feature:4"
           },
           {
-            "duration": 0.000172278,
+            "duration": 0.00017188,
             "location": "./src/test/resources/features/belly.feature:4"
           },
           {
-            "duration": 0.000333894,
+            "duration": 0.000212064,
             "location": "./src/test/resources/features/belly.feature:4"
           },
           {
-            "duration": 0.000251636,
+            "duration": 0.000883909,
             "location": "./src/test/resources/features/belly.feature:4"
           },
           {
-            "duration": 0.000436422,
+            "duration": 0.000286568,
             "location": "./src/test/resources/features/belly.feature:4"
           }
         ]
