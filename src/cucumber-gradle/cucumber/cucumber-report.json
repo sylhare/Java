@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 133471699,
+              "duration": 116946157,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 2423391,
+              "duration": 2567950,
               "status": "passed"
             },
             "line": 5,
@@ -49,7 +49,7 @@
         "before": [
           {
             "result": {
-              "duration": 263353,
+              "duration": 249681,
               "status": "passed"
             },
             "match": {
@@ -64,7 +64,7 @@
         "after": [
           {
             "result": {
-              "duration": 35997,
+              "duration": 28250,
               "status": "passed"
             },
             "match": {
@@ -77,7 +77,7 @@
         "steps": [
           {
             "result": {
-              "duration": 795924,
+              "duration": 508537,
               "status": "passed"
             },
             "line": 8,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 236957,
+              "duration": 232386,
               "status": "passed"
             },
             "line": 9,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 1611425,
+              "duration": 2097863,
               "status": "passed"
             },
             "line": 10,
@@ -134,7 +134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 171880,
+              "duration": 221484,
               "status": "passed"
             },
             "line": 4,
@@ -146,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 222787,
+              "duration": 224893,
               "status": "passed"
             },
             "line": 5,
@@ -172,7 +172,7 @@
         "before": [
           {
             "result": {
-              "duration": 48624,
+              "duration": 45006,
               "status": "passed"
             },
             "match": {
@@ -187,7 +187,7 @@
         "after": [
           {
             "result": {
-              "duration": 227102,
+              "duration": 65989,
               "status": "passed"
             },
             "match": {
@@ -200,7 +200,7 @@
         "steps": [
           {
             "result": {
-              "duration": 621104,
+              "duration": 400088,
               "status": "passed"
             },
             "line": 13,
@@ -218,7 +218,7 @@
           },
           {
             "result": {
-              "duration": 239506,
+              "duration": 335416,
               "status": "passed"
             },
             "line": 14,
@@ -236,7 +236,7 @@
           },
           {
             "result": {
-              "duration": 903122,
+              "duration": 304746,
               "status": "passed"
             },
             "line": 15,
@@ -257,7 +257,7 @@
         "steps": [
           {
             "result": {
-              "duration": 212064,
+              "duration": 314674,
               "status": "passed"
             },
             "line": 4,
@@ -269,7 +269,7 @@
           },
           {
             "result": {
-              "duration": 330918,
+              "duration": 539644,
               "status": "passed"
             },
             "line": 5,
@@ -295,7 +295,7 @@
         "before": [
           {
             "result": {
-              "duration": 62106,
+              "duration": 66465,
               "status": "passed"
             },
             "match": {
@@ -310,7 +310,7 @@
         "after": [
           {
             "result": {
-              "duration": 32484,
+              "duration": 70959,
               "status": "passed"
             },
             "match": {
@@ -323,7 +323,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1773619,
+              "duration": 1399085,
               "status": "passed"
             },
             "line": 18,
@@ -345,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 478432,
+              "duration": 554053,
               "status": "passed"
             },
             "line": 19,
@@ -367,7 +367,7 @@
           },
           {
             "result": {
-              "duration": 860494,
+              "duration": 627434,
               "status": "passed"
             },
             "line": 20,
@@ -398,7 +398,7 @@
         "steps": [
           {
             "result": {
-              "duration": 883909,
+              "duration": 346801,
               "status": "passed"
             },
             "line": 4,
@@ -410,7 +410,7 @@
           },
           {
             "result": {
-              "duration": 982846,
+              "duration": 1027919,
               "status": "passed"
             },
             "line": 5,
@@ -436,7 +436,7 @@
         "before": [
           {
             "result": {
-              "duration": 54053,
+              "duration": 62147,
               "status": "passed"
             },
             "match": {
@@ -451,7 +451,7 @@
         "after": [
           {
             "result": {
-              "duration": 79522,
+              "duration": 35911,
               "status": "passed"
             },
             "match": {
@@ -464,7 +464,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1550203,
+              "duration": 694349,
               "status": "passed"
             },
             "line": 18,
@@ -486,7 +486,7 @@
           },
           {
             "result": {
-              "duration": 1591721,
+              "duration": 267856,
               "status": "passed"
             },
             "line": 19,
@@ -508,7 +508,7 @@
           },
           {
             "result": {
-              "duration": 432763,
+              "duration": 389420,
               "status": "passed"
             },
             "line": 20,
@@ -539,7 +539,7 @@
         "steps": [
           {
             "result": {
-              "duration": 286568,
+              "duration": 317848,
               "status": "passed"
             },
             "line": 4,
@@ -551,7 +551,7 @@
           },
           {
             "result": {
-              "duration": 399988,
+              "duration": 1693042,
               "status": "passed"
             },
             "line": 5,
@@ -577,7 +577,7 @@
         "before": [
           {
             "result": {
-              "duration": 75188,
+              "duration": 76082,
               "status": "passed"
             },
             "match": {
@@ -592,7 +592,7 @@
         "after": [
           {
             "result": {
-              "duration": 55297,
+              "duration": 30476,
               "status": "passed"
             },
             "match": {
@@ -605,7 +605,7 @@
         "steps": [
           {
             "result": {
-              "duration": 669940,
+              "duration": 1537569,
               "status": "passed"
             },
             "line": 28,
@@ -627,7 +627,7 @@
           },
           {
             "result": {
-              "duration": 572749,
+              "duration": 326859,
               "status": "passed"
             },
             "line": 29,
@@ -645,7 +645,7 @@
           },
           {
             "result": {
-              "duration": 1966199,
+              "duration": 504607,
               "status": "passed"
             },
             "line": 30,
@@ -663,7 +663,7 @@
           },
           {
             "result": {
-              "duration": 661816,
+              "duration": 541195,
               "status": "passed"
             },
             "line": 31,
@@ -681,6 +681,495 @@
     "id": "belly",
     "keyword": "Feature",
     "uri": "./src/test/resources/features/belly.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 207719,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.SetUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Exact match",
+        "description": "",
+        "id": "regular-expressions-in-step-definitions;exact-match",
+        "after": [
+          {
+            "result": {
+              "duration": 24006,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 321047,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have a cucumber step",
+            "match": {
+              "location": "Steps.i_have_a_cucumber_step()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 53303,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.SetUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Non-capturing group",
+        "description": "",
+        "id": "regular-expressions-in-step-definitions;non-capturing-group",
+        "after": [
+          {
+            "result": {
+              "duration": 28159,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 259727,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I have a tasty cucumber step",
+            "match": {
+              "location": "Steps.i_have_a_X_cucumber_step()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 162147,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I have a nasty cucumber step",
+            "match": {
+              "location": "Steps.i_have_a_X_cucumber_step()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 240767,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I have a rusty cucumber step",
+            "match": {
+              "location": "Steps.i_have_a_X_cucumber_step()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 341830,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.SetUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Capture integers and strings",
+        "description": "",
+        "id": "regular-expressions-in-step-definitions;capture-integers-and-strings",
+        "after": [
+          {
+            "result": {
+              "duration": 47167,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 600387,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I have 5 carrots in my basket",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 7
+                },
+                {
+                  "val": "carrots",
+                  "offset": 9
+                }
+              ],
+              "location": "Steps.i_have_in_my_basket(int,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 79659,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.SetUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Singular and plural",
+        "description": "",
+        "id": "regular-expressions-in-step-definitions;singular-and-plural",
+        "after": [
+          {
+            "result": {
+              "duration": 50601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 656331,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "There is 1 cat fed by 1 person",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 9
+                },
+                {
+                  "val": "1",
+                  "offset": 22
+                }
+              ],
+              "location": "Steps.animals_fed_by_people(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 645907,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "There are 2 cats fed by 1 person",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 10
+                },
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.animals_fed_by_people(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2712640,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "There are 2 cats fed by 2 persons",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 10
+                },
+                {
+                  "val": "2",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.animals_fed_by_people(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 693072,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "There are 2 cats fed by 3 people",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 10
+                },
+                {
+                  "val": "3",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.animals_fed_by_people(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 647694,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "There is 1 ox fed by 4 persons",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 9
+                },
+                {
+                  "val": "4",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.animals_fed_by_people(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1842562,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "There are 3 oxen fed by 5 people",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 10
+                },
+                {
+                  "val": "5",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.animals_fed_by_people(int,int)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 107154,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.SetUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Data tables",
+        "description": "",
+        "id": "regular-expressions-in-step-definitions;data-tables",
+        "after": [
+          {
+            "result": {
+              "duration": 32511,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6246063,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I have the following order",
+            "match": {
+              "location": "Steps.i_have_the_following_order(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "vegetable",
+                  "amount",
+                  "cost"
+                ]
+              },
+              {
+                "cells": [
+                  "cucumber",
+                  "4",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "carrot",
+                  "5",
+                  "6"
+                ]
+              },
+              {
+                "cells": [
+                  "potato",
+                  "6",
+                  "4"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 114797,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.SetUp()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "List of domain objects",
+        "description": "",
+        "id": "regular-expressions-in-step-definitions;list-of-domain-objects",
+        "after": [
+          {
+            "result": {
+              "duration": 46235,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29780942,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I have another order",
+            "match": {
+              "location": "Steps.i_have_another_order(VeggieShop\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "vegetable",
+                  "amount",
+                  "cost"
+                ]
+              },
+              {
+                "cells": [
+                  "cucumber",
+                  "4",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "carrot",
+                  "5",
+                  "6"
+                ]
+              },
+              {
+                "cells": [
+                  "potato",
+                  "6",
+                  "4"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Regular expressions in step definitions",
+    "description": "  As a developer\n  I want to see examples of regular expressions in step definitions\n  So that I can write powerful Cucumber steps",
+    "id": "regular-expressions-in-step-definitions",
+    "keyword": "Feature",
+    "uri": "./src/test/resources/features/veggieshop.feature",
     "tags": []
   }
 ]

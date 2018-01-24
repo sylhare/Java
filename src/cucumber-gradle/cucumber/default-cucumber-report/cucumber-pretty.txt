@@ -52,3 +52,33 @@ Feature: Belly
     [32mWhen [0m[32mI wait [0m[32m[1m1[0m[32m hour[0m              [90m# Steps.I_wait_x_hours(int)[0m
     [32mBut [0m[32mI have [0m[32m[1m50[0m[32m cakes in my belly[0m [90m# Steps.I_have_cakes_in_my_belly(int)[0m
     [32mThen [0m[32mMy belly should not growl[0m  [90m# Steps.Is_belly_not_growling()[0m
+
+Feature: Regular expressions in step definitions
+  As a developer
+  I want to see examples of regular expressions in step definitions
+  So that I can write powerful Cucumber steps
+
+  Scenario: Exact match          [90m# ./src/test/resources/features/veggieshop.feature:6[0m
+    [32mGiven [0m[32mI have a cucumber step[0m [90m# Steps.i_have_a_cucumber_step()[0m
+
+  Scenario: Non-capturing group        [90m# ./src/test/resources/features/veggieshop.feature:9[0m
+    [32mGiven [0m[32mI have a tasty cucumber step[0m [90m# Steps.i_have_a_X_cucumber_step()[0m
+    [32mGiven [0m[32mI have a nasty cucumber step[0m [90m# Steps.i_have_a_X_cucumber_step()[0m
+    [32mGiven [0m[32mI have a rusty cucumber step[0m [90m# Steps.i_have_a_X_cucumber_step()[0m
+
+  Scenario: Capture integers and strings [90m# ./src/test/resources/features/veggieshop.feature:14[0m
+    [32mGiven [0m[32mI have [0m[32m[1m5[0m[32m [0m[32m[1mcarrots[0m[32m in my basket[0m  [90m# Steps.i_have_in_my_basket(int,String)[0m
+
+  Scenario: Singular and plural             [90m# ./src/test/resources/features/veggieshop.feature:17[0m
+    [32mGiven [0m[32mThere is [0m[32m[1m1[0m[32m cat fed by [0m[32m[1m1[0m[32m person[0m    [90m# Steps.animals_fed_by_people(int,int)[0m
+    [32mGiven [0m[32mThere are [0m[32m[1m2[0m[32m cats fed by [0m[32m[1m1[0m[32m person[0m  [90m# Steps.animals_fed_by_people(int,int)[0m
+    [32mGiven [0m[32mThere are [0m[32m[1m2[0m[32m cats fed by [0m[32m[1m2[0m[32m persons[0m [90m# Steps.animals_fed_by_people(int,int)[0m
+    [32mGiven [0m[32mThere are [0m[32m[1m2[0m[32m cats fed by [0m[32m[1m3[0m[32m people[0m  [90m# Steps.animals_fed_by_people(int,int)[0m
+    [32mGiven [0m[32mThere is [0m[32m[1m1[0m[32m ox fed by [0m[32m[1m4[0m[32m persons[0m    [90m# Steps.animals_fed_by_people(int,int)[0m
+    [32mGiven [0m[32mThere are [0m[32m[1m3[0m[32m oxen fed by [0m[32m[1m5[0m[32m people[0m  [90m# Steps.animals_fed_by_people(int,int)[0m
+
+  Scenario: Data tables              [90m# ./src/test/resources/features/veggieshop.feature:25[0m
+    [32mGiven [0m[32mI have the following order[0m [90m# Steps.i_have_the_following_order(DataTable)[0m
+
+  Scenario: List of domain objects [90m# ./src/test/resources/features/veggieshop.feature:32[0m
+    [32mGiven [0m[32mI have another order[0m     [90m# Steps.i_have_another_order(VeggieShop>)[0m

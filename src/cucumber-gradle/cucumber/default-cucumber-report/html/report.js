@@ -389,4 +389,266 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+formatter.uri("./src/test/resources/features/veggieshop.feature");
+formatter.feature({
+  "name": "Regular expressions in step definitions",
+  "description": "  As a developer\n  I want to see examples of regular expressions in step definitions\n  So that I can write powerful Cucumber steps",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Exact match",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have a cucumber step",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.i_have_a_cucumber_step()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Non-capturing group",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have a tasty cucumber step",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.i_have_a_X_cucumber_step()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have a nasty cucumber step",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.i_have_a_X_cucumber_step()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have a rusty cucumber step",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.i_have_a_X_cucumber_step()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Capture integers and strings",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have 5 carrots in my basket",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.i_have_in_my_basket(int,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Singular and plural",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "There is 1 cat fed by 1 person",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.animals_fed_by_people(int,int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "There are 2 cats fed by 1 person",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.animals_fed_by_people(int,int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "There are 2 cats fed by 2 persons",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.animals_fed_by_people(int,int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "There are 2 cats fed by 3 people",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.animals_fed_by_people(int,int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "There is 1 ox fed by 4 persons",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.animals_fed_by_people(int,int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "There are 3 oxen fed by 5 people",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.animals_fed_by_people(int,int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Data tables",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have the following order",
+  "rows": [
+    {
+      "cells": [
+        "vegetable",
+        "amount",
+        "cost"
+      ]
+    },
+    {
+      "cells": [
+        "cucumber",
+        "4",
+        "10"
+      ]
+    },
+    {
+      "cells": [
+        "carrot",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "cells": [
+        "potato",
+        "6",
+        "4"
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.i_have_the_following_order(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "List of domain objects",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have another order",
+  "rows": [
+    {
+      "cells": [
+        "vegetable",
+        "amount",
+        "cost"
+      ]
+    },
+    {
+      "cells": [
+        "cucumber",
+        "4",
+        "10"
+      ]
+    },
+    {
+      "cells": [
+        "carrot",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "cells": [
+        "potato",
+        "6",
+        "4"
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.i_have_another_order(VeggieShop\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 });

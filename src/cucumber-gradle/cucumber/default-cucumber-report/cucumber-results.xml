@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0.226634">
-<testcase classname="Belly" name="001 - A few cakes in an hour" time="0.157515">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="11" time="0.273963">
+<testcase classname="Belly" name="001 - A few cakes in an hour" time="0.144294">
 <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given I have 42 cakes in my belly...........................................passed
@@ -8,7 +8,7 @@ When I wait 1 hour..........................................................pass
 Then My belly should growl..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Belly" name="002 - Many cakes in an hour" time="0.01159">
+<testcase classname="Belly" name="002 - Many cakes in an hour" time="0.007281">
 <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given I have 100 cakes in my belly..........................................passed
@@ -16,7 +16,7 @@ When I wait 0 hour..........................................................pass
 Then My belly should not growl..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Belly" name="003 - Eating cucumbers" time="0.017788">
+<testcase classname="Belly" name="003 - Eating cucumbers" time="0.018296">
 <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given There are 12 "cucumbers"..............................................passed
@@ -24,7 +24,7 @@ When I eat 5 "cucumbers"....................................................pass
 Then I should have 7 "cucumbers"............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Belly" name="003 - Eating cucumbers 2" time="0.022351">
+<testcase classname="Belly" name="003 - Eating cucumbers 2" time="0.00901">
 <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given There are 20 "cucumbers"..............................................passed
@@ -32,13 +32,44 @@ When I eat 5 "cucumbers"....................................................pass
 Then I should have 15 "cucumbers"...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Belly" name="004" time="0.01739">
+<testcase classname="Belly" name="004" time="0.013494">
 <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given I eat 6 "cucumbers"...................................................passed
 When I wait 1 hour..........................................................passed
 But I have 50 cakes in my belly.............................................passed
 Then My belly should not growl..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regular expressions in step definitions" name="Exact match" time="0.013661">
+<system-out><![CDATA[Given I have a cucumber step................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regular expressions in step definitions" name="Non-capturing group" time="0.003885">
+<system-out><![CDATA[Given I have a tasty cucumber step..........................................passed
+Given I have a nasty cucumber step..........................................passed
+Given I have a rusty cucumber step..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regular expressions in step definitions" name="Capture integers and strings" time="0.004643">
+<system-out><![CDATA[Given I have 5 carrots in my basket.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regular expressions in step definitions" name="Singular and plural" time="0.016625">
+<system-out><![CDATA[Given There is 1 cat fed by 1 person........................................passed
+Given There are 2 cats fed by 1 person......................................passed
+Given There are 2 cats fed by 2 persons.....................................passed
+Given There are 2 cats fed by 3 people......................................passed
+Given There is 1 ox fed by 4 persons........................................passed
+Given There are 3 oxen fed by 5 people......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regular expressions in step definitions" name="Data tables" time="0.008973">
+<system-out><![CDATA[Given I have the following order............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regular expressions in step definitions" name="List of domain objects" time="0.033801">
+<system-out><![CDATA[Given I have another order..................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
