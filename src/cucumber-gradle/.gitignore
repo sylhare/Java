@@ -1,8 +1,0 @@
-/.idea/
-*.iml
-*.xml
-/target/
-/out/
-/gradle/
-.gradle/
-build/
