@@ -3,70 +3,30 @@
 [![Build Status](https://travis-ci.org/cucumber/cucumber-java-skeleton.svg?branch=master)](https://travis-ci.org/cucumber/cucumber-java-skeleton)
 
 This is the simplest possible build script setup for Cucumber using Java.
-There is nothing fancy like a webapp or browser testing. All this does is to show you how
-to install and run Cucumber!
 
-There is a single feature file with one scenario. The scenario has three steps, two of them pending. See if you can make them all pass!
+To build and generate the files, try to run: 
+```
+mvn test
+```
 
+Or the TestRunner class to run the cucumber test case.
+Once run, it will generate information in `./cucumber` you can go in and run (having cucumber-html-reporter node package installed):
 
-## Use Gradle
+```
+node index.js
+```
 
-Open a command window and run:
+To generate the nice looking report.
 
-    gradlew test
+## Cucumber
 
-This runs Cucumber features using Cucumber's JUnit runner. The `@RunWith(Cucumber.class)` annotation on the `RunCukesTest`
-class tells JUnit to kick off Cucumber.
+Cucumber works with a `feature` file where you put the `Gherkin` syntax (Given, When, Then).
+It is used by non technical team to understand the scenario, test case and steps.
 
-## Overriding options
+Then there is the `Steps.java` class that is the interpreter of the text in the `feature` file.
+It translate the words into actionable methods within the code. Can be linked to unit test and other class.
+With intelliJ or by running the `feature` file you can generate with cucumber the skeleton of the function.
+The `Steps.java` is called the `glue` and understand the `feature` file through Regex (regular exceptions).
 
-The Cucumber runtime parses command line options to know what features to run, where the glue code lives, what plugins to use etc.
-When you use the JUnit runner, these options are generated from the `@CucumberOptions` annotation on your test.
-
-Sometimes it can be useful to override these options without changing or recompiling the JUnit class. This can be done with the
-`cucumber.options` system property. The general form is:
-
-Using Gradle:
-
-    gradlew -Dcucumber.options="..." test
-
-Let's look at some things you can do with `cucumber.options`. Try this:
-
-    -Dcucumber.options="--help"
-
-That should list all the available options.
-
-*IMPORTANT*
-
-When you override options with `-Dcucumber.options`, you will completely override whatever options are hard-coded in
-your `@CucumberOptions` or in the script calling `cucumber.api.cli.Main`. There is one exception to this rule, and that
-is the `--plugin` option. This will not _override_, but _add_ a plugin. The reason for this is to make it easier
-for 3rd party tools (such as [Cucumber Pro](https://cucumber.pro/)) to automatically configure additional plugins by appending arguments to a `cucumber.properties`
-file.
-
-### Run a subset of Features or Scenarios
-
-Specify a particular scenario by *line* (and use the pretty plugin, which prints the scenario back)
-
-    -Dcucumber.options="classpath:skeleton/belly.feature:4 --plugin pretty"
-
-This works because Maven puts `./src/test/resources` on your `classpath`.
-You can also specify files to run by filesystem path:
-
-    -Dcucumber.options="src/test/resources/skeleton/belly.feature:4 --plugin pretty"
-
-You can also specify what to run by *tag*:
-
-    -Dcucumber.options="--tags @bar --plugin pretty"
-
-### Running only the scenarios that failed in the previous run
-
-    -Dcucumber.options="@target/rerun.txt"
-
-This works as long as you have the `rerun` formatter enabled.
-
-### Specify a different formatter:
-
-For example a JUnit formatter:
-
-    -Dcucumber.options="--plugin junit:target/cucumber-junit-report.xml"
+Finally there is the `TestRunner` java file which is used to specify cucumber and test options.
+Such as the creation of data on the cucumber tests or the unit test runner. 
