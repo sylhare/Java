@@ -4,9 +4,15 @@
 
 This is the simplest possible build script setup for Cucumber using Java.
 
-To build and generate the files, try to run: 
+## Getting started
+
+To build and generate the files, try to run with gradle: 
 ```
-mvn test
+gradle test
+```
+or
+```
+bash gradlew test
 ```
 
 Or the TestRunner class to run the cucumber test case.
