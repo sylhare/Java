@@ -8,10 +8,6 @@ This is the simplest possible build script setup for Cucumber using Java.
 
 To build and generate the files, try to run with gradle: 
 ```
-gradle test
-```
-or
-```
 bash gradlew test
 ```
 
