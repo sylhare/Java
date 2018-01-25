@@ -68,26 +68,34 @@ public class Steps {
 
     }
 
+    // Reg Ex Example in steps with Cucumber
+    // http://blog.czeczotka.com/2014/08/17/writing-cucumber-jvm-step-definitions/
+
+    // 101 - Exact match
     @Given("^I have a cucumber step$")
     public void i_have_a_cucumber_step() throws Throwable {
         System.out.println ("Step definition exact match");
     }
 
+    // 102 - Non-capturing group
     @Given("^I have a (?:tasty|nasty|rusty) cucumber step$")
     public void i_have_a_X_cucumber_step() throws Throwable {
         System.out.println ("Step definition with a non-capturing group");
     }
 
+    // 103 - Capture integers and strings
     @Given("^I have (\\d+) (.*) in my basket$")
     public void i_have_in_my_basket(int number, String veg) throws Throwable {
         System.out.println(format("I have {0} {1} in my basket", number, veg));
     }
 
+    // 104 - Singular and plural
     @Given("^There (?:is|are) (\\d+) (?:cats?|ox|oxen) fed by (\\d+) (?:persons?|people)$")
     public void animals_fed_by_people(int animals, int persons) throws Throwable {
         System.out.println(format("{0} animal(s) fed by {1} person(s)", animals, persons));
     }
 
+    // 105 - Data tables
     @Given ("^I have the following order$")
     public void i_have_the_following_order (DataTable table) throws Throwable {
         for (Map<String, String> map : table.asMaps(String.class, String.class)) {
@@ -98,6 +106,7 @@ public class Steps {
         }
     }
 
+    // 106 - List of domain objects
     @Given("^I have another order$")
     public void i_have_another_order(List<VeggieShop> list) throws Throwable {
         for (VeggieShop orderItem : list) {

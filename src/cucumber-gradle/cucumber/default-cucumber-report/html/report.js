@@ -396,7 +396,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Exact match",
+  "name": "101 - Exact match",
   "description": "",
   "keyword": "Scenario"
 });
@@ -417,7 +417,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Non-capturing group",
+  "name": "102 - Non-capturing group",
   "description": "",
   "keyword": "Scenario"
 });
@@ -458,7 +458,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Capture integers and strings",
+  "name": "103 - Capture integers and strings",
   "description": "",
   "keyword": "Scenario"
 });
@@ -479,7 +479,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Singular and plural",
+  "name": "104 - Singular and plural",
   "description": "",
   "keyword": "Scenario"
 });
@@ -550,7 +550,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Data tables",
+  "name": "105 - Data tables",
   "description": "",
   "keyword": "Scenario"
 });
@@ -601,7 +601,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "List of domain objects",
+  "name": "106 - List of domain objects",
   "description": "",
   "keyword": "Scenario"
 });

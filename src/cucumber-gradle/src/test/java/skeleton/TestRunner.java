@@ -12,5 +12,5 @@ import org.junit.runner.RunWith;
                             "junit:./cucumber/default-cucumber-report/cucumber-results.xml" },
                 features = { "./src/test/resources/features/" })
                 //glue = { "./src/test/java/skeleton/" })
-public class CakesTest {
+public class TestRunner {
 }
