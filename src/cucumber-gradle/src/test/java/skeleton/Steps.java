@@ -117,6 +117,13 @@ public class Steps {
         }
     }
 
+    //107
+    @Given("^I have a shop named \"(.*)\"$")
+    public void i_have_a_shop_named(String shopName) throws Exception {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println ("Step definition exact match " + shopName);
+    }
+
     @After
     public void afterScenario(){
         //System.out.println("This will run after the Scenario");

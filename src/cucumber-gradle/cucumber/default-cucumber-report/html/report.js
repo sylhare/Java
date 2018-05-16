@@ -651,4 +651,25 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "107 - Get and keep the double quotes",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have a shop named \"\"VeggieShop\"\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.i_have_a_shop_named(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 });

@@ -82,3 +82,6 @@ Feature: Regular expressions in step definitions
 
   Scenario: 106 - List of domain objects [90m# ./src/test/resources/features/veggieshop.feature:32[0m
     [32mGiven [0m[32mI have another order[0m           [90m# Steps.i_have_another_order(VeggieShop>)[0m
+
+  Scenario: 107 - Get and keep the double quotes [90m# ./src/test/resources/features/veggieshop.feature:39[0m
+    [32mGiven [0m[32mI have a shop named "[0m[32m[1m"VeggieShop"[0m[32m"[0m     [90m# Steps.i_have_a_shop_named(String)[0m

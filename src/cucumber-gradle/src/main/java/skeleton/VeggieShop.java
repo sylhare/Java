@@ -29,5 +29,4 @@ public class VeggieShop {
         this.cost = cost;
     }
 
-
 }
