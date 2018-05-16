@@ -39,6 +39,18 @@ The `Steps.java` is called the `glue` and understand the `feature` file through 
 Finally there is the `TestRunner` java file which is used to specify cucumber and test options.
 Such as the creation of data on the cucumber tests or the unit test runner. 
 
+## RegEx quick help
+
+Here is the table with some of the Regex basic expression.
+You can find more in the `veggieshop.feature` and the implementation in `Steps`
+
+| Expression | Meaning                   |
+|------------|---------------------------|
+| (.*)       | Match any string          |
+| (\\d+)     | Match any number          |
+| ^          | Any beginning of a string |
+| $          | Any end of a string       |
+
 
 ## Get Technical with Cucumber
 
