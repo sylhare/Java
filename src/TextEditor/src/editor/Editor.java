@@ -56,6 +56,7 @@ public class Editor extends JFrame implements ActionListener {
     /**
      * Will trigger some action depending on the event.
      * Menu item actions
+     *
      * @param e
      */
     public void actionPerformed(ActionEvent e) {

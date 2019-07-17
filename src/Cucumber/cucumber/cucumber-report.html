@@ -1,371 +1,362 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Cucumber Feature Report</title>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
-      .panel-heading {
-    padding: 0;
-}
+        .panel-heading {
+            padding: 0;
+        }
 
-@media (min-width: 768px) {
-    .pull-right-lg {
-        float: left;
-    }
-}
+        @media (min-width: 768px) {
+            .pull-right-lg {
+                float: left;
+            }
+        }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .pull-right-lg {
-        float: right;
-    }
-}
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .pull-right-lg {
+                float: right;
+            }
+        }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .pull-right-lg {
-        float: right;
-    }
-}
+        @media (min-width: 768px) and (max-width: 991px) {
+            .pull-right-lg {
+                float: right;
+            }
+        }
 
-@media (min-width: 1200px) {
-    .pull-right-lg {
-        float: right;
-    }
-}
+        @media (min-width: 1200px) {
+            .pull-right-lg {
+                float: right;
+            }
+        }
 
-.left {
-    float: left;
-}
+        .left {
+            float: left;
+        }
 
-.metadata {
-    overflow: auto;
-    letter-spacing: 0.2px;
-    border-color: white;
-    line-height: 1.6;
-    color: #4d4d4d;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    padding-bottom: 3px;
-}
+        .metadata {
+            overflow: auto;
+            letter-spacing: 0.2px;
+            border-color: white;
+            line-height: 1.6;
+            color: #4d4d4d;
+            font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            padding-bottom: 3px;
+        }
 
-.panel-heading a {
-    padding: 10px 15px;
-    display: block;
-    position: relative;
-    text-decoration: none;
-}
+        .panel-heading a {
+            padding: 10px 15px;
+            display: block;
+            position: relative;
+            text-decoration: none;
+        }
 
-.panel-heading i.glyphicon-chevron-down {
-    display: none;
-}
+        .panel-heading i.glyphicon-chevron-down {
+            display: none;
+        }
 
-.panel-heading i.glyphicon-chevron-right {
-    display: inline-block;
-}
+        .panel-heading i.glyphicon-chevron-right {
+            display: inline-block;
+        }
 
-.panel-heading.open i.glyphicon-chevron-down {
-    display: inline-block;
-}
+        .panel-heading.open i.glyphicon-chevron-down {
+            display: inline-block;
+        }
 
-.panel-heading.open i.glyphicon-chevron-right {
-    display: none;
-}
+        .panel-heading.open i.glyphicon-chevron-right {
+            display: none;
+        }
 
-.generated-on {
-    text-align: right;
-    padding-bottom: 10px;
-}
+        .generated-on {
+            text-align: right;
+            padding-bottom: 10px;
+        }
 
-.panel-title b {
-    padding-right: 10px;
-}
+        .panel-title b {
+            padding-right: 10px;
+        }
 
-.panel-heading .label-container {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-}
+        .panel-heading .label-container {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
 
-.panel-heading .label-container label {
-    margin-left: 5px;
-    padding: 5px;
-}
+        .panel-heading .label-container label {
+            margin-left: 5px;
+            padding: 5px;
+        }
 
-.navbar .label-container {
-    position: absolute;
-    right: 10px;
-    top: 14px;
-}
+        .navbar .label-container {
+            position: absolute;
+            right: 10px;
+            top: 14px;
+        }
 
-.navbar {
-    margin-bottom: 10px;
-}
+        .navbar {
+            margin-bottom: 10px;
+        }
 
-.navbar .label {
-    font-size: 20px;
-}
+        .navbar .label {
+            font-size: 20px;
+        }
 
-.navbar .project-name {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    margin-left: -100px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-}
+        .navbar .project-name {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            margin-left: -100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
 
-.tags {
-    margin-left: 18px;
-    margin-right: 20px;
-    padding-top: 5px;
-    margin-bottom: -4px;
-}
+        .tags {
+            margin-left: 18px;
+            margin-right: 20px;
+            padding-top: 5px;
+            margin-bottom: -4px;
+        }
 
-.tag {
-    font-size: 13px;
-    color: #696969;
-    letter-spacing: 0.3px;
-    font-weight: bold;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-}
+        .tag {
+            font-size: 13px;
+            color: #696969;
+            letter-spacing: 0.3px;
+            font-weight: bold;
+            font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        }
 
-.chart {
-    padding-bottom: 15px;
-}
+        .chart {
+            padding-bottom: 15px;
+        }
 
-div.chart div div svg rect {
-    fill: #f5f5f5;
-}
+        div.chart div div svg rect {
+            fill: #f5f5f5;
+        }
 
-.arguments {
-    margin-left: 30px;
-    margin-top: 1em;
-}
+        .arguments {
+            margin-left: 30px;
+            margin-top: 1em;
+        }
 
-#directory {
-    background-color: #f0f0f0;
-}
+        #directory {
+            background-color: #f0f0f0;
+        }
 
-.screenshot {
-    padding: 2% 0 2% 0;
-}
+        .screenshot {
+            padding: 2% 0 2% 0;
+        }
 
-.description {
-    background-color: white;
-    border-color: white;
-    line-height: 1.6;
-    color: #6f6f6f;
-    font-weight: 400;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    padding: 0.1em 0.5em 1.2em 1.5em
-}
+        .description {
+            background-color: white;
+            border-color: white;
+            line-height: 1.6;
+            color: #6f6f6f;
+            font-weight: 400;
+            font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            padding: 0.1em 0.5em 1.2em 1.5em
+        }
 
-#scenario-description {
-    padding-bottom: 1em;
-    padding-left: 0.2em;
-}
+        #scenario-description {
+            padding-bottom: 1em;
+            padding-left: 0.2em;
+        }
 
-.scrollBar {
-    overflow-x: scroll;
-}
+        .scrollBar {
+            overflow-x: scroll;
+        }
 
-table {
-    border-collapse: collapse;
-}
+        table {
+            border-collapse: collapse;
+        }
 
-table, th, td {
-    border: 1px solid black;
-}
+        table, th, td {
+            border: 1px solid black;
+        }
 
-th, td {
-    text-align: left;
-    padding: 8px;
-}
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
 
-th {
-    background-color: #f5f5f5;
-    color: black;
-}
+        th {
+            background-color: #f5f5f5;
+            color: black;
+        }
 
-.info {
-    background-color: #fbfbfb;
-}
+        .info {
+            background-color: #fbfbfb;
+        }
 
-pre {
-    display: block;
-    padding: 10px;
-    margin-top: 1em;
-    margin-right: 3em;
-    font-size: 13px;
-    line-height: 1.42857143;
-    word-break: break-all;
-    word-wrap: break-word;
-    color: #333;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+        pre {
+            display: block;
+            padding: 10px;
+            margin-top: 1em;
+            margin-right: 3em;
+            font-size: 13px;
+            line-height: 1.42857143;
+            word-break: break-all;
+            word-wrap: break-word;
+            color: #333;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-.step-duration {
-    float: right;
-    color: #BDBDBD;
-}
+        .step-duration {
+            float: right;
+            color: #BDBDBD;
+        }
 
-.footer-div {
-    text-align: right;
-    vertical-align: middle;
-    height: 3.5%;
-    width: 100%;
-}
+        .footer-div {
+            text-align: right;
+            vertical-align: middle;
+            height: 3.5%;
+            width: 100%;
+        }
 
-.footer-container {
-    margin-right: 10px;
-    margin-top: 5px;
-    width: 18%;
-    z-index: 10;
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    text-align: center;
-    background-color: transparent;
-}
+        .footer-container {
+            margin-right: 10px;
+            margin-top: 5px;
+            width: 18%;
+            z-index: 10;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            text-align: center;
+            background-color: transparent;
+        }
 
-.footer-link {
-    font-size: 13px;
-    float: right;
-}
+        .footer-link {
+            font-size: 13px;
+            float: right;
+        }
 
-.footer-link:hover {
-    color: darkgray;
-}
+        .footer-link:hover {
+            color: darkgray;
+        }
 
-.steps {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: -4px;
-}
+        .steps {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: -4px;
+        }
 
-.all-features {
-    padding-top: 0.6em;
-}
+        .all-features {
+            padding-top: 0.6em;
+        }
 
-.keyword {
-    color: #616161;
-}
+        .keyword {
+            color: #616161;
+        }
 
     </style>
     <meta charset="UTF-8">
-  </head>
-  <body>
+</head>
+<body>
 
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-        
-          <a class="navbar-brand">Cucumberjs Report</a>
-          <div class="project-name visible-md visible-lg">default</div>
-          <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 12</span>
-            <span class="label label-danger" title=scenarios>Failed: 0</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<div class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
+        <div class="navbar-header">
 
-      <div class="generated-on">Wed May 30 2018 15:01:05 GMT-0400 (EDT)</div>
+            <a class="navbar-brand">Cucumberjs Report</a>
+            <div class="project-name visible-md visible-lg">default</div>
+            <div class="label-container">
+                <span class="label label-success" title=scenarios>Passed: 12</span>
+                <span class="label label-danger" title=scenarios>Failed: 0</span>
+            </div>
+        </div>
+    </div>
+</div>
 
-      <div class="row">
+<div class="container">
+
+    <div class="generated-on">Wed May 30 2018 15:01:05 GMT-0400 (EDT)</div>
+
+    <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
         <div class="chart col-lg-6 col-md-6" id="piechart_scenarios"></div>
-      </div>
+    </div>
 
-      
-      <div class="panel panel-default">
+
+    <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" href="#logOutput">
-              <i class="glyphicon glyphicon-chevron-right"></i>
-              <i class="glyphicon glyphicon-chevron-down"></i>
-              <b>Metadata</b>
-            </a>
-          </h4>
+            <h4 class="panel-title">
+                <a data-toggle="collapse" href="#logOutput">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                    <b>Metadata</b>
+                </a>
+            </h4>
         </div>
-        <div id="logOutput" class="panel-collapse collapse">
-          <div class="panel-body">
-            <div class="row">
-              
-             
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-left>
-                    <strong> App Version: </strong>0.3.2
-                  </div>
-              </div>
-              
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-right-lg>
-                    <strong> Test Environment: </strong>STAGING
-                  </div>
-              </div>
-              
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-left>
-                    <strong> Browser: </strong>Chrome  54.0.2840.98
-                  </div>
-              </div>
-              
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-right-lg>
-                    <strong> Platform: </strong>Windows 10
-                  </div>
-              </div>
-              
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-left>
-                    <strong> Parallel: </strong>Scenarios
-                  </div>
-              </div>
-              
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-right-lg>
-                    <strong> Executed: </strong>Remote
-                  </div>
-              </div>
-              
+        <div class="panel-collapse collapse" id="logOutput">
+            <div class="panel-body">
+                <div class="row">
+
+
+                    <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                            <strong> App Version: </strong>0.3.2
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                            <strong> Test Environment: </strong>STAGING
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                            <strong> Browser: </strong>Chrome 54.0.2840.98
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                            <strong> Platform: </strong>Windows 10
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                            <strong> Parallel: </strong>Scenarios
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                            <strong> Executed: </strong>Remote
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      
+    </div>
 
-      
 
-<div class="row">
-    
-    <div class="col-lg-6 col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <div class="tags"> </div>
-                    <a data-toggle="collapse" href="#collapseFeaturedefault0">
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                        <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>Belly
-                        <span class="label-container">
+    <div class="row">
+
+        <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <div class="tags"></div>
+                        <a data-toggle="collapse" href="#collapseFeaturedefault0">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                            <b>Feature:</b>Belly
+                            <span class="label-container">
               <span class="label label-success" title="5 Scenarios Passed">5</span>
               
               
@@ -373,27 +364,27 @@ pre {
               
               
             </span>
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFeaturedefault0" class="panel-collapse collapse">
-                <div class="panel-body">
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_0">
-                                    <div>
+                        </a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse" id="collapseFeaturedefault0">
+                    <div class="panel-body">
 
-                                        <div style="padding-right: 10px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Background:</b>
-                                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_0">
                                         <div>
+
+                                            <div style="padding-right: 10px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Background:</b>
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               
                               
@@ -402,24 +393,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_0" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_0">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> Belly is empty</span>
                           
@@ -429,29 +420,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">And </span>
                           <span> There are 0 &quot;cucumbers&quot;</span>
                           
@@ -461,38 +444,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_1">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>001 - A few cakes in an hour
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_1">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>001 - A few cakes in an hour
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="3 Steps Passed">3</span>
                               
@@ -501,24 +476,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_1" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_1">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have 42 cakes in my belly</span>
                           
@@ -528,29 +503,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">When </span>
                           <span> I wait 1 hour</span>
                           
@@ -560,29 +527,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Then </span>
                           <span> My belly should growl</span>
                           
@@ -592,38 +551,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_2">
-                                    <div>
 
-                                        <div style="padding-right: 10px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Background:</b>
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_2">
                                         <div>
+
+                                            <div style="padding-right: 10px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Background:</b>
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               
                               
@@ -632,24 +583,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_2" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_2">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> Belly is empty</span>
                           
@@ -659,29 +610,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">And </span>
                           <span> There are 0 &quot;cucumbers&quot;</span>
                           
@@ -691,38 +634,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_3">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>002 - Many cakes in an hour
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_3">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>002 - Many cakes in an hour
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="3 Steps Passed">3</span>
                               
@@ -731,24 +666,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_3" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_3">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have 100 cakes in my belly</span>
                           
@@ -758,29 +693,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">When </span>
                           <span> I wait 0 hour</span>
                           
@@ -790,29 +717,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Then </span>
                           <span> My belly should not growl</span>
                           
@@ -822,38 +741,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_4">
-                                    <div>
 
-                                        <div style="padding-right: 10px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Background:</b>
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_4">
                                         <div>
+
+                                            <div style="padding-right: 10px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Background:</b>
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               
                               
@@ -862,24 +773,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_4" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_4">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> Belly is empty</span>
                           
@@ -889,29 +800,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">And </span>
                           <span> There are 0 &quot;cucumbers&quot;</span>
                           
@@ -921,38 +824,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_5">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario Outline:</b>003 - Eating cucumbers
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_5">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario Outline:</b>003 - Eating cucumbers
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="3 Steps Passed">3</span>
                               
@@ -961,24 +856,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_5" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_5">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> There are 12 &quot;cucumbers&quot;</span>
                           
@@ -988,29 +883,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">When </span>
                           <span> I eat 5 &quot;cucumbers&quot;</span>
                           
@@ -1020,29 +907,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Then </span>
                           <span> I should have 7 &quot;cucumbers&quot;</span>
                           
@@ -1052,38 +931,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_6">
-                                    <div>
 
-                                        <div style="padding-right: 10px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Background:</b>
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_6">
                                         <div>
+
+                                            <div style="padding-right: 10px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Background:</b>
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               
                               
@@ -1092,24 +963,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_6" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_6">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> Belly is empty</span>
                           
@@ -1119,29 +990,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">And </span>
                           <span> There are 0 &quot;cucumbers&quot;</span>
                           
@@ -1151,38 +1014,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_7">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario Outline:</b>003 - Eating cucumbers
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_7">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario Outline:</b>003 - Eating cucumbers
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="3 Steps Passed">3</span>
                               
@@ -1191,24 +1046,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_7" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_7">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> There are 20 &quot;cucumbers&quot;</span>
                           
@@ -1218,29 +1073,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">When </span>
                           <span> I eat 5 &quot;cucumbers&quot;</span>
                           
@@ -1250,29 +1097,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Then </span>
                           <span> I should have 15 &quot;cucumbers&quot;</span>
                           
@@ -1282,38 +1121,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_8">
-                                    <div>
 
-                                        <div style="padding-right: 10px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Background:</b>
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_8">
                                         <div>
+
+                                            <div style="padding-right: 10px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Background:</b>
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               
                               
@@ -1322,24 +1153,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_8" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_8">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> Belly is empty</span>
                           
@@ -1349,29 +1180,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">And </span>
                           <span> There are 0 &quot;cucumbers&quot;</span>
                           
@@ -1381,38 +1204,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault0_9">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>004
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault0_9">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>004
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="4 Steps Passed">4</span>
                               
@@ -1421,24 +1236,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault0_9" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault0_9">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I eat 6 &quot;cucumbers&quot;</span>
                           
@@ -1448,29 +1263,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">When </span>
                           <span> I wait 1 hour</span>
                           
@@ -1480,29 +1287,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">But </span>
                           <span> I have 50 cakes in my belly</span>
                           
@@ -1512,29 +1311,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Then </span>
                           <span> My belly should not growl</span>
                           
@@ -1544,41 +1335,32 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                
             </div>
         </div>
-    </div>
-</div>
 
 
-
-    <div class="col-lg-6 col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <div class="tags"> </div>
-                    <a data-toggle="collapse" href="#collapseFeaturedefault1">
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                        <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>Regular expressions in step definitions
-                        <span class="label-container">
+        <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <div class="tags"></div>
+                        <a data-toggle="collapse" href="#collapseFeaturedefault1">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                            <b>Feature:</b>Regular expressions in step definitions
+                            <span class="label-container">
               <span class="label label-success" title="7 Scenarios Passed">7</span>
               
               
@@ -1586,27 +1368,29 @@ pre {
               
               
             </span>
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFeaturedefault1" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <div class="description">  As a developer<br />  I want to see examples of regular expressions in step definitions<br />  So that I can write powerful Cucumber steps</div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault1_0">
-                                    <div>
+                        </a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse" id="collapseFeaturedefault1">
+                    <div class="panel-body">
+                        <div class="description"> As a developer<br/> I want to see examples of regular expressions in
+                            step definitions<br/> So that I can write powerful Cucumber steps
+                        </div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>101 - Exact match
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault1_0">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>101 - Exact match
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="1 Steps Passed">1</span>
                               
@@ -1615,24 +1399,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault1_0" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault1_0">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have a cucumber step</span>
                           
@@ -1642,38 +1426,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault1_1">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>102 - Non-capturing group
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault1_1">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>102 - Non-capturing group
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="3 Steps Passed">3</span>
                               
@@ -1682,24 +1458,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault1_1" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault1_1">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have a tasty cucumber step</span>
                           
@@ -1709,29 +1485,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have a nasty cucumber step</span>
                           
@@ -1741,29 +1509,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have a rusty cucumber step</span>
                           
@@ -1773,38 +1533,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault1_2">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>103 - Capture integers and strings
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault1_2">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>103 - Capture integers and strings
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="1 Steps Passed">1</span>
                               
@@ -1813,24 +1565,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault1_2" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault1_2">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have 5 carrots in my basket</span>
                           
@@ -1840,38 +1592,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault1_3">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>104 - Singular and plural
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault1_3">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>104 - Singular and plural
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="6 Steps Passed">6</span>
                               
@@ -1880,24 +1624,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault1_3" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault1_3">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> There is 1 cat fed by 1 person</span>
                           
@@ -1907,29 +1651,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> There are 2 cats fed by 1 person</span>
                           
@@ -1939,29 +1675,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> There are 2 cats fed by 2 persons</span>
                           
@@ -1971,29 +1699,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> There are 2 cats fed by 3 people</span>
                           
@@ -2003,29 +1723,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> There is 1 ox fed by 4 persons</span>
                           
@@ -2035,29 +1747,21 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> There are 3 oxen fed by 5 people</span>
                           
@@ -2067,38 +1771,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault1_4">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>105 - Data tables
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault1_4">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>105 - Data tables
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="1 Steps Passed">1</span>
                               
@@ -2107,24 +1803,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault1_4" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault1_4">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have the following order</span>
                           
@@ -2134,38 +1830,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault1_5">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>106 - List of domain objects
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault1_5">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>106 - List of domain objects
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="1 Steps Passed">1</span>
                               
@@ -2174,24 +1862,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault1_5" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault1_5">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have another order</span>
                           
@@ -2201,38 +1889,30 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <a data-toggle="collapse" href="#collapseScenariodefault1_6">
-                                    <div>
 
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>107 - Get and keep the double quotes
-                                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+
+
+                                    <a data-toggle="collapse" href="#collapseScenariodefault1_6">
                                         <div>
+
+                                            <div style="padding-right: 30px">
+                                                <i class="glyphicon glyphicon-chevron-right"></i>
+                                                <i class="glyphicon glyphicon-chevron-down"></i>
+                                                <b>Scenario:</b>107 - Get and keep the double quotes
+                                            </div>
+                                            <div>
                             <span class="label-container">
                               <span class="label label-success" title="1 Steps Passed">1</span>
                               
@@ -2241,24 +1921,24 @@ pre {
                               
                               
                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariodefault1_6" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseScenariodefault1_6">
+                                <div class="panel-body">
+
+
+                                    <p class="scenario-container">
+                                    <div class="row steps">
+
+
+                                        <span class="label label-success" title="Success"><i
+                                                class="glyphicon glyphicon-ok"></i></span>
+
+
+                                        <span class="text">
                         <span class="keyword highlight">Given </span>
                           <span> I have a shop named &quot;&quot;VeggieShop&quot;&quot;</span>
                           
@@ -2268,142 +1948,135 @@ pre {
                             
                          
                       </span>
-                                    
-                                    
 
-                                    
 
-                                    
+                                    </div>
+                                    </p>
 
-                                    
 
-                                    
-                            	</div>
-                            </p>
-                            
-                            
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                
             </div>
         </div>
-    </div>
-</div>
-
-</div>
-
-
-
 
     </div>
 
-    <div class="navbar-fixed-bottom row-fluid footer-div ">
-      <div class="navbar-inner">
+
+</div>
+
+<div class="navbar-fixed-bottom row-fluid footer-div ">
+    <div class="navbar-inner">
         <div class="footer-container">
-          <a  target="_blank" href="https://www.npmjs.com/package/cucumber-html-reporter">
-            <div class="text-muted footer-link">
-              generated by @cucumber-html-reporter
-            </div>
-             </a>
+            <a href="https://www.npmjs.com/package/cucumber-html-reporter" target="_blank">
+                <div class="text-muted footer-link">
+                    generated by @cucumber-html-reporter
+                </div>
+            </a>
         </div>
-      </div>
     </div>
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-        google.load("visualization", "1", {packages: ["corechart"]});
-        google.setOnLoadCallback(function() {drawChart({
-                                                            "title" : "Features",
-                                                            "failed" : 0,
-                                                            "passed" : 2,
-                                                            "ambiguous" : 0
-                                                        })
-                                            });
-        google.setOnLoadCallback(function() {drawChart({
-                                                            "title" : "Scenarios",
-                                                            "failed" : 0,
-                                                            "passed" : 12,
-                                                            "notdefined" : 0,
-                                                            "pending" : 0,
-                                                            "skipped" : 0,
-                                                            "ambiguous" : 0
-                                                        })
-                                            });
-    </script>
-    <script>
-      $(document).ready(function() {
-    $('.collapse').on('hide.bs.collapse', function(e) {
-        e.stopPropagation();
-        $(this).prev().removeClass('open');
-    }).on('show.bs.collapse', function(e) {
-        e.stopPropagation();
-        $(this).prev().addClass('open');
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load("visualization", "1", {packages: ["corechart"]});
+    google.setOnLoadCallback(function () {
+        drawChart({
+            "title": "Features",
+            "failed": 0,
+            "passed": 2,
+            "ambiguous": 0
+        })
+    });
+    google.setOnLoadCallback(function () {
+        drawChart({
+            "title": "Scenarios",
+            "failed": 0,
+            "passed": 12,
+            "notdefined": 0,
+            "pending": 0,
+            "skipped": 0,
+            "ambiguous": 0
+        })
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.collapse').on('hide.bs.collapse', function (e) {
+            e.stopPropagation();
+            $(this).prev().removeClass('open');
+        }).on('show.bs.collapse', function (e) {
+            e.stopPropagation();
+            $(this).prev().addClass('open');
+        });
+
+        var $generated = $('.generated-on');
+
+        $generated.text('Generated ' + moment($generated.text()).fromNow());
     });
 
-    var $generated = $('.generated-on');
+    function drawChart(chartData) {
+        var data = google.visualization.arrayToDataTable([
+            ['Task', 'Cucumber Results'],
+            ['Passed', chartData.passed],
+            ['Failed', chartData.failed],
+            ['Pending', chartData.pending],
+            ['Undefined', chartData.notdefined],
+            ['Ambiguous', chartData.ambiguous],
+            ['Skipped', chartData.skipped]
+        ]);
 
-    $generated.text('Generated ' + moment($generated.text()).fromNow());
-});
+        var total = chartData.passed + chartData.failed + (chartData.pending || 0) + (chartData.notdefined || 0) + (chartData.ambiguous || 0) + (chartData.skipped || 0);
+        var title;
 
-      function drawChart(chartData) {
-    var data = google.visualization.arrayToDataTable([
-        ['Task', 'Cucumber Results'],
-        ['Passed', chartData.passed],
-        ['Failed', chartData.failed],
-        ['Pending', chartData.pending],
-        ['Undefined', chartData.notdefined],
-        ['Ambiguous', chartData.ambiguous],
-        ['Skipped', chartData.skipped]        
-    ]);
-
-    var total = chartData.passed + chartData.failed + (chartData.pending || 0) + (chartData.notdefined || 0) + (chartData.ambiguous || 0) + (chartData.skipped || 0);
-    var title;
-
-    if (total === 1) {
-        title = total + ' ' + chartData.title.slice(0, -1)
-    } else {
-        title = total + ' ' + chartData.title;
-    }
-
-    var options = {
-        width: '100%',
-        height: 240,
-        title: title,
-        is3D: true,
-        colors: ['#5cb85c', '#d9534f', '#999', '#5bc0de', '#428bca', '#f0ad4e'],
-        fontSize: '13',
-        fontName: '"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif',
-        slices: {
-            1: {offset: 0.4},
-            2: {offset: 0.4},
-            3: {offset: 0.4},
-            4: {offset: 0.4},
-            5: {offset: 0.4},
-            6: {offset: 0.4}
-        },
-        titleTextStyle: {
-            fontSize: '13',
-            color: '#5e5e5e'
+        if (total === 1) {
+            title = total + ' ' + chartData.title.slice(0, -1)
+        } else {
+            title = total + ' ' + chartData.title;
         }
-    };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart_' + chartData.title.toLowerCase()));
-    chart.draw(data, options);
-}
-      $('a.toggle').on('click', function() {
-    if ($(this).text() === 'Screenshot -') {
-        $(this).text('Screenshot +');
-        $(this).next('a.screenshot').find('img').hide();
-    } else {
-        $(this).text('Screenshot -');
-        $(this).next('a.screenshot').find('img').show();
+        var options = {
+            width: '100%',
+            height: 240,
+            title: title,
+            is3D: true,
+            colors: ['#5cb85c', '#d9534f', '#999', '#5bc0de', '#428bca', '#f0ad4e'],
+            fontSize: '13',
+            fontName: '"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif',
+            slices: {
+                1: {offset: 0.4},
+                2: {offset: 0.4},
+                3: {offset: 0.4},
+                4: {offset: 0.4},
+                5: {offset: 0.4},
+                6: {offset: 0.4}
+            },
+            titleTextStyle: {
+                fontSize: '13',
+                color: '#5e5e5e'
+            }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_' + chartData.title.toLowerCase()));
+        chart.draw(data, options);
     }
-});
 
-    </script>
-  </body>
+    $('a.toggle').on('click', function () {
+        if ($(this).text() === 'Screenshot -') {
+            $(this).text('Screenshot +');
+            $(this).next('a.screenshot').find('img').hide();
+        } else {
+            $(this).text('Screenshot -');
+            $(this).next('a.screenshot').find('img').show();
+        }
+    });
+
+</script>
+</body>
 </html>

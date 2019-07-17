@@ -14,7 +14,7 @@ test:
     - "bash script/run_tests.sh"
   post:
     - "echo Build succeeded!"
- 
+
 
 ## Custom notifications
 #notify:

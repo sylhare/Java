@@ -1,79 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="0.257941">
-<testcase classname="Belly" name="001 - A few cakes in an hour" time="0.143508">
-<system-out><![CDATA[Given Belly is empty........................................................passed
+    <testcase classname="Belly" name="001 - A few cakes in an hour" time="0.143508">
+        <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given I have 42 cakes in my belly...........................................passed
 When I wait 1 hour..........................................................passed
 Then My belly should growl..................................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Belly" name="002 - Many cakes in an hour" time="0.00615">
-<system-out><![CDATA[Given Belly is empty........................................................passed
+    </testcase>
+    <testcase classname="Belly" name="002 - Many cakes in an hour" time="0.00615">
+        <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given I have 100 cakes in my belly..........................................passed
 When I wait 0 hour..........................................................passed
 Then My belly should not growl..............................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Belly" name="003 - Eating cucumbers" time="0.015241">
-<system-out><![CDATA[Given Belly is empty........................................................passed
+    </testcase>
+    <testcase classname="Belly" name="003 - Eating cucumbers" time="0.015241">
+        <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given There are 12 "cucumbers"..............................................passed
 When I eat 5 "cucumbers"....................................................passed
 Then I should have 7 "cucumbers"............................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Belly" name="003 - Eating cucumbers 2" time="0.013347">
-<system-out><![CDATA[Given Belly is empty........................................................passed
+    </testcase>
+    <testcase classname="Belly" name="003 - Eating cucumbers 2" time="0.013347">
+        <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given There are 20 "cucumbers"..............................................passed
 When I eat 5 "cucumbers"....................................................passed
 Then I should have 15 "cucumbers"...........................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Belly" name="004" time="0.008931">
-<system-out><![CDATA[Given Belly is empty........................................................passed
+    </testcase>
+    <testcase classname="Belly" name="004" time="0.008931">
+        <system-out><![CDATA[Given Belly is empty........................................................passed
 And There are 0 "cucumbers".................................................passed
 Given I eat 6 "cucumbers"...................................................passed
 When I wait 1 hour..........................................................passed
 But I have 50 cakes in my belly.............................................passed
 Then My belly should not growl..............................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Regular expressions in step definitions" name="101 - Exact match" time="0.012529">
-<system-out><![CDATA[Given I have a cucumber step................................................passed
+    </testcase>
+    <testcase classname="Regular expressions in step definitions" name="101 - Exact match" time="0.012529">
+        <system-out><![CDATA[Given I have a cucumber step................................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Regular expressions in step definitions" name="102 - Non-capturing group" time="0.003275">
-<system-out><![CDATA[Given I have a tasty cucumber step..........................................passed
+    </testcase>
+    <testcase classname="Regular expressions in step definitions" name="102 - Non-capturing group" time="0.003275">
+        <system-out><![CDATA[Given I have a tasty cucumber step..........................................passed
 Given I have a nasty cucumber step..........................................passed
 Given I have a rusty cucumber step..........................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Regular expressions in step definitions" name="103 - Capture integers and strings" time="0.004985">
-<system-out><![CDATA[Given I have 5 carrots in my basket.........................................passed
+    </testcase>
+    <testcase classname="Regular expressions in step definitions" name="103 - Capture integers and strings"
+              time="0.004985">
+        <system-out><![CDATA[Given I have 5 carrots in my basket.........................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Regular expressions in step definitions" name="104 - Singular and plural" time="0.014651">
-<system-out><![CDATA[Given There is 1 cat fed by 1 person........................................passed
+    </testcase>
+    <testcase classname="Regular expressions in step definitions" name="104 - Singular and plural" time="0.014651">
+        <system-out><![CDATA[Given There is 1 cat fed by 1 person........................................passed
 Given There are 2 cats fed by 1 person......................................passed
 Given There are 2 cats fed by 2 persons.....................................passed
 Given There are 2 cats fed by 3 people......................................passed
 Given There is 1 ox fed by 4 persons........................................passed
 Given There are 3 oxen fed by 5 people......................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Regular expressions in step definitions" name="105 - Data tables" time="0.003735">
-<system-out><![CDATA[Given I have the following order............................................passed
+    </testcase>
+    <testcase classname="Regular expressions in step definitions" name="105 - Data tables" time="0.003735">
+        <system-out><![CDATA[Given I have the following order............................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Regular expressions in step definitions" name="106 - List of domain objects" time="0.02981">
-<system-out><![CDATA[Given I have another order..................................................passed
+    </testcase>
+    <testcase classname="Regular expressions in step definitions" name="106 - List of domain objects" time="0.02981">
+        <system-out><![CDATA[Given I have another order..................................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Regular expressions in step definitions" name="107 - Get and keep the double quotes" time="0.001779">
-<system-out><![CDATA[Given I have a shop named ""VeggieShop""....................................passed
+    </testcase>
+    <testcase classname="Regular expressions in step definitions" name="107 - Get and keep the double quotes"
+              time="0.001779">
+        <system-out><![CDATA[Given I have a shop named ""VeggieShop""....................................passed
 ]]></system-out>
-</testcase>
+    </testcase>
 </testsuite>
