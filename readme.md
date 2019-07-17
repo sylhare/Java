@@ -1,7 +1,7 @@
 # Java 
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dec313da3c1a4b7997c2f638738d8f53)](https://www.codacy.com/app/Sylhare/Java_hero?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Sylhare/Java_hero&amp;utm_campaign=Badge_Grade)
-[![CircleCI](https://circleci.com/gh/Sylhare/Java/tree/master.svg?style=svg)](https://circleci.com/gh/Sylhare/Java/tree/master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dec313da3c1a4b7997c2f638738d8f53)](https://www.codacy.com/app/sylhare/Java_hero?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Sylhare/Java_hero&amp;utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/sylhare/Java/tree/master.svg?style=svg)](https://circleci.com/gh/Sylhare/Java/tree/master)
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com)
 
@@ -180,7 +180,7 @@ A new page will show up and you can select *Maven*, it will automatically reform
 
 :warning: Sometime IntelliJ push the compiler to v1.5 [#2](https://github.com/Sylhare/Java_hero/issues/2). There is two way to specify the right language for the compiler in the pom.xml file. Either add or modify the already existing `<build>` tag in the `<project>` tag : 
 
-```html
+```xml
     <build>
         <plugins>
             <plugin>
@@ -220,7 +220,7 @@ To add an external librairy to your project, just copy and past the `<dependency
 
 Here for example for the [Guava](https://github.com/google/guava) librairy from Google:
 
-```html
+```xml
 <project>
 	<!-- information about your project -->
 	<dependencies>
