@@ -1,4 +1,4 @@
-package tests;
+package collections;
 
 
 import java.text.MessageFormat;

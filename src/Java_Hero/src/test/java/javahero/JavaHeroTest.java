@@ -1,7 +1,5 @@
-package tests;
+package javahero;
 
-import javahero.Food;
-import javahero.Settings;
 import javahero.character.Human;
 import javahero.character.Living;
 import javahero.character.SuperHero;
@@ -41,7 +39,7 @@ public class JavaHeroTest {
     System.out.println(superHero.getPowers());
     superHero.talk("Hi! How are you?");
 
-    //javahero.Food tests.JavaHeroTest
+    //javahero.Food javahero.JavaHeroTest
     System.out.println("\n~~~~~~~~~~~~~~~~~~~~");
     System.out.println(burger.toString());
     // Creating an anonymous class when calling the the javahero.Food class to override a method

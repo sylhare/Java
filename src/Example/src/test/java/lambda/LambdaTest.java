@@ -1,4 +1,4 @@
-package tests;
+package lambda;
 
 import lambda.Bar;
 import lambda.Foo;
