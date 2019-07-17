@@ -21,8 +21,8 @@ Feature: Belly
 
     Examples:
       | start | eat | left |
-      |  12   |  5  |  7   |
-      |  20   |  5  |  15  |
+      | 12    | 5   | 7    |
+      | 20    | 5   | 15   |
 
   Scenario: 004
     Given I eat 6 "cucumbers"

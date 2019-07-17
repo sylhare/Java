@@ -5,8 +5,8 @@ package editor;
  */
 public class Main {
 
-    public static void main(String args[]) {
-        Editor app = new Editor();
-        app.setVisible(true);
-    }
+  public static void main(String args[]) {
+    Editor app = new Editor();
+    app.setVisible(true);
+  }
 }

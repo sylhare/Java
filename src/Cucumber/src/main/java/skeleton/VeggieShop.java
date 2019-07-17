@@ -1,32 +1,32 @@
 package skeleton;
 
 public class VeggieShop {
-    private String vegetable;
-    private int amount;
-    private int cost;
+  private String vegetable;
+  private int amount;
+  private int cost;
 
-    public String getVegetable () {
-        return vegetable;
-    }
+  public String getVegetable() {
+    return vegetable;
+  }
 
-    public void setVegetable (String vegetable) {
-        this.vegetable = vegetable;
-    }
+  public void setVegetable(String vegetable) {
+    this.vegetable = vegetable;
+  }
 
-    public int getAmount () {
-        return amount;
-    }
+  public int getAmount() {
+    return amount;
+  }
 
-    public void setAmount (int amount) {
-        this.amount = amount;
-    }
+  public void setAmount(int amount) {
+    this.amount = amount;
+  }
 
-    public int getCost () {
-        return cost;
-    }
+  public int getCost() {
+    return cost;
+  }
 
-    public void setCost (int cost) {
-        this.cost = cost;
-    }
+  public void setCost(int cost) {
+    this.cost = cost;
+  }
 
 }

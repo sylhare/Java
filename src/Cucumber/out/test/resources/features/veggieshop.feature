@@ -25,16 +25,16 @@ Feature: Regular expressions in step definitions
   Scenario: 105 - Data tables
     Given I have the following order
       | vegetable | amount | cost |
-      | cucumber  |   4    |  10  |
-      | carrot    |   5    |   6  |
-      | potato    |   6    |   4  |
+      | cucumber  | 4      | 10   |
+      | carrot    | 5      | 6    |
+      | potato    | 6      | 4    |
 
   Scenario: 106 - List of domain objects
     Given I have another order
       | vegetable | amount | cost |
-      | cucumber  |   4    |  10  |
-      | carrot    |   5    |   6  |
-      | potato    |   6    |   4  |
+      | cucumber  | 4      | 10   |
+      | carrot    | 5      | 6    |
+      | potato    | 6      | 4    |
 
-    Scenario: 107 - Get and keep the double quotes
-      Given I have a shop named ""VeggieShop""
+  Scenario: 107 - Get and keep the double quotes
+    Given I have a shop named ""VeggieShop""
