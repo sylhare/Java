@@ -5,5 +5,5 @@ package javahero.behaviour;
  * A class is created for every implementation of the function, then it can be implemented independently of the class
  */
 public interface Heal {
-    Integer heal();
+  Integer heal();
 }

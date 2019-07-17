@@ -1,13 +1,15 @@
 package javahero.behaviour;
 
 /**
+ *
  */
-public class FirstAid implements Heal{
+public class FirstAid implements Heal {
 
-    @Override
-    public Integer heal(){
-        System.out.println("Applying First Aid");
-        return 10;
-    };
+  @Override
+  public Integer heal() {
+    System.out.println("Applying First Aid");
+    return 10;
+  }
+
 }
 
