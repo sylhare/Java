@@ -1,8 +1,8 @@
 package tests;
 
 import lambda.Bar;
-import lambda.MyLambda;
 import lambda.Foo;
+import lambda.MyLambda;
 import lambda.UseLambda;
 
 import java.util.function.Function;
@@ -32,13 +32,16 @@ public class LambdaTest {
     Function<String, Foo> createMe = Foo::method;
     Function<String, Foo> bar = methodTakingFunctionAsParameter(createMe);
     bar.apply("from a method");
+
+    System.out.println("1234567".substring("1234567".length() - 1));
   }
 
   private static String createMessage(final String parameter) {
     return parameter + " from method";
   }
 
-  private static Function<String, Foo> methodTakingFunctionAsParameter(Function<String, Foo> function){
+  private static Function<String, Foo> methodTakingFunctionAsParameter(Function<String, Foo> function) {
     return function;
   }
+
 }
