@@ -1,3 +1,5 @@
+import * as CucumberHTML from "./formatter";
+
 $(document).ready(function () {
     var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));
     formatter.uri("./src/test/resources/features/belly.feature");
