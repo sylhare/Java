@@ -9,13 +9,13 @@ Here is a little playground for Java development.
 
 ## Some Java insight
 
-The java language developped by Oracle is:
+The java language developed by Oracle is:
 
-- Portbale, robust and dynamic
-- Plateform independant
+- Portable, robust and dynamic
+- Platform independent
 - Runs on the JVM (Java Virtual Machine) which is system dependant
 
-With the JVM, you can write `.java` files, that get compiled into Java bytecodes into `.class` file. The `.class` files can be executed on the Java Virtual Machine.
+With the JVM, you can write `.java` files, that get compiled into Java byte codes into `.class` file. The `.class` files can be executed on the Java Virtual Machine.
 
 ## Environment set up
 
@@ -26,7 +26,7 @@ I first learned with the NetBeans Bundle: [here](http://www.oracle.com/technetwo
 ### Get and Install the SDK
 SDK for Software Development Kit also called JDK - Java Development Kit.
 You can get the Oracle Java SDK [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Choose the one for your system, here for windows. </br>
-There's the Oracle JDK (Comercial, Stable with proprietary code from Oracle) and the Open JDK (Open source, maintained by Oracle).
+There's the Oracle JDK (Commercial, Stable with proprietary code from Oracle) and the Open JDK (Open source, maintained by Oracle).
 
 The JDK includes, it can be called inside a command prompt:
 
@@ -80,7 +80,7 @@ Maven can now be used to build the project:
 - `mvn package` to create the library package (such as a JAR file for example)
 - `mvn test` to use the maven "surefire" plugin to run unit test in the `src/test/jave` folder with a matching `*Test`name
 - `mvn install` to add your project's JAR file to your local repository (like a `compile` but making it ready as a dependency to be referenced by another project
-- `mvn clean install` to copy the librairies if the first one fails.
+- `mvn clean install` to copy the libraries if the first one fails.
 
 ### Getting started
 
@@ -155,7 +155,7 @@ Here are some [details](https://spring.io/guides/gs/maven/) on all of the shown 
 
 ## IntelliJ
 
-IntelliJ is an IDE developped by [JetBrain](https://www.jetbrains.com/idea/), the community version is free and comes with a lot of pro features (that might be overkill in some cases).
+IntelliJ is an IDE developed by [JetBrain](https://www.jetbrains.com/idea/), the community version is free and comes with a lot of pro features (that might be overkill in some cases).
 
 ### Getting started with IntelliJ
 First you have to create a Java project: File **>** New **>** Project.
@@ -197,28 +197,28 @@ A new page will show up and you can select *Maven*, it will automatically reform
 The above solution worked great on IntelliJ. You can also can try this solution from [Apache Maven](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html).
 
 
-### Setting up dependencies, add external librairies
+### Setting up dependencies, add external libraries
 
-You can add external librairies to your Java project. Here are two ways of doing in with IntelliJ.
+You can add external libraries to your Java project. Here are two ways of doing in with IntelliJ.
 
 ####  with JAR
 
-You can download the JAR file of the external librairy and add it to your project. For that you can do go on **File** > **Project Structure** (or `[ALT] + [ctrl] + [shift] + [S]`).
+You can download the JAR file of the external library and add it to your project. For that you can do go on **File** > **Project Structure** (or `[ALT] + [ctrl] + [shift] + [S]`).
 
-Once there you can click on the green plus and add the .jar file. (Save the Jar in your place for librairies such as *lib/directory*).
+Once there you can click on the green plus and add the .jar file. (Save the Jar in your place for libraries such as *lib/directory*).
 
 Now you should be all set, you can now import the library:
 
 ```java
-//Importing a librairy
-import main.java.com.librairy;
+//Importing a library
+import main.java.com.library;
 ```
 
 #### with Maven
 
-To add an external librairy to your project, just copy and past the `<dependency>` into `<dependencies>` inside `<project>` of your pom.xml
+To add an external library to your project, just copy and past the `<dependency>` into `<dependencies>` inside `<project>` of your pom.xml
 
-Here for example for the [Guava](https://github.com/google/guava) librairy from Google:
+Here for example for the [Guava](https://github.com/google/guava) library from Google:
 
 ```xml
 <project>
@@ -232,113 +232,3 @@ Here for example for the [Guava](https://github.com/google/guava) librairy from 
 	<dependencies>
 </project>
 ```
-
-----------------------------------------------------------------------------------------------------------------
-
-## What's so special coding in JAVA
-
-Here are some key features that are good to keep in mind. If one's want to learn, I would suggest going on these websites:
-
-- [Open Classroom](https://openclassrooms.com/courses/apprenez-a-programmer-en-java) (French)
-- [Sololearn](https://www.sololearn.com/Course/Java/) (English)
-
-### I. Encapsulation
-
-Encapsulation is made through keywords that define how the object (method, attribute, ...) can be accessed.
-We call it encapsulation because it can isolate and control data access.
-
-#### private
-
-With private, you make the value or method unavailable outside the class it's in.
-In order to get to private attribute, you'll need to use "getter" and "setter" that will get and return the value, or that will set the value correctly. 
-That way you have more control and flexibility on the access and modifications of the attributes.
-
-#### protected
-
-A protected value or method will only be available inside the same package or child class (even in foreign package). 
-Packages are Like the folders where the `.java` file is stored
-
-#### public
-
-It has no restrictions and can be available from anywhere and modified direclty. However the class which it's called from should be instanced before.
-
-#### Other keywords that goes with encapsulation
-##### 1. final
-
-The final key word should be placed before the type.
-
-- For a variable, it means it can't be reassigned.
-- For a method, it means it can't be overrided in by a child class. (So an abstract method can't be final) 
-- For a class, it means that a child class can't be created from the final one.
-
-##### 2. static
-
-A static field, method or class has a single instance for the whole class that defines it, even if there is no instance of this class in the program. It can so be called from anywhere. </br>
-It should be placed before the final keyword.
-</br></br>
-
-### II. Polymorphism
-
-Polymorphism refers to the idea of having multiple forms, it occurs with child class and parent class when you inherite or pass a method. Each class can have its own implementation of the same method.
-
-#### Overriding
-
-Overriding is *runtime polymorphism* when you change the inherited method (can't override final or static, can't narrow encapsulation). Overrinding is tagged in java thanks to the `@Overriding` keyword.
-
-#### Overloading
-
-Overloading is *compile-time polymorphism* when you declare multiple time the same method but with different input. There's no particular keyword for over loading, only multiple methods with same name but different arguments.
-</br></br>
-
-### III. Inheritance
-
-Inheritance refers to the process that enables one class to acquire the methods and variable of a parent class thanks to the `extends` keyword:
-
-- The class inheriting is the *subclass* (also called *child class* or *derived class*).
-- The class whose properties are inherited is the *super class* (also called *parent class* or *base class*)
-
-Inheritance can be regulated thanks to the encapsulation keywords seen above (public, private, ...). </br>
-The parent constructor (which are called when the class is instanced) can't be inherited by the child class. However it is automatically called in the constructor of the child class.
-
-The `super()` method can be used to call the parent constructor directly. You can also use the `super` keyword to call directly methods or variables from the parent class (for example `super.method()` or `super.value`)
-
-### IV. Abstraction
-
-The concept of abstraction is that we focus on essential qualities, rather than the specific characteristics of one particular example.
-
-In Java, abstraction is achieved using abstract classes and interfaces.
-
-#### abstract class
-
-An abstract class is a class that have at least one abstract method marked with the `abstract` keyword (put in the definition instead of `public` for example). An abstract method is only a definition, it does not have a body. </br> 
-The abstract element are to be implemented in the child class when inherited, it used to give a default behaviour and common characteristics.
-
-#### Interfaces
-
-There's no constructors in an Interface, there's only abstract methods and variables. The interface is set thanks to the `implement` keyword at the definition of the class.</br>
-If you wish to store instanced variables however it is best practice to use an Enum instead.
-
-## Java Libraries
-
-### Collection framework
-
-The collection framework is what is inside the `java.util`. And as its name refers to, it contains a lot :
-
-| Interface | Hash Table | Resizable Array | Balanced Tree | Linked List | Hash Table + Linked List |
-|-----------|------------|-----------------|---------------|-------------|--------------------------|
-| Set       | HashSet    |                 | TreeSet       |             | LinkedHashSet            |
-| List      |            | ArrayList       |               | LinkedList  |                          |
-| Deque     |            | ArrayDeque      |               | LinkedList  |                          |
-| Map       | HashMap    |                 | TreeMap       |             | LinkedHashMap            |
-
-There are more graphical information available in [Java_here/resources](https://github.com/Sylhare/Java_hero/tree/master/resources) :
-
-![Collection framework](https://github.com/Sylhare/Java_hero/blob/master/resources/Collection%20Framework.JPG)
-
-## Automated testing
-
-XUnit and JUnit is used for automated testing on JAVA.
-
-- [junit](http://junit.org/junit4/)
-- [xunit](http://xunit.github.io/)
-
