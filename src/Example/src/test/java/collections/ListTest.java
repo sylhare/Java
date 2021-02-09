@@ -23,9 +23,7 @@ public class ListTest {
   public static void main(String[] args) {
 
     setUp();
-    aTestList.forEach((temp) -> {
-      System.out.println(temp);
-    });
+    aTestList.forEach(System.out::println);
     printList(aTestList);
 
     System.out.println("Normal " + aTestList);
@@ -72,14 +70,14 @@ public class ListTest {
    * en une seule String, chaque élément étant séparé par une virgule.
    */
   public static List<String> concatenate(List<String> list) {
-    String t = "";
+    StringBuilder t = new StringBuilder();
     List<String> cList = new ArrayList<String>();
 
     for (String i : list) {
-      t = t + i;
+      t.append(i);
     }
 
-    cList.add(t);
+    cList.add(t.toString());
 
     return cList;
   }

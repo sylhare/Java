@@ -6,8 +6,6 @@ import java.util.*;
 
 /**
  * Source https://www.javatpoint.com/collections-in-java
- * <p>
- * Created by sylhare on 2017-05-03.
  */
 public class DataCollectionTest {
   public static void main(String[] args) {
@@ -91,9 +89,8 @@ public class DataCollectionTest {
     hset.add(null);
 
     //Traversing elements will print from Z to A
-    Iterator<String> itr = hset.iterator();
-    while (itr.hasNext()) {
-      System.out.println(itr.next());
+    for (String s : hset) {
+      System.out.println(s);
     }
   }
 

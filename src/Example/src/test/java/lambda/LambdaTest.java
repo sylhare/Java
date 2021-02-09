@@ -1,10 +1,5 @@
 package lambda;
 
-import lambda.Bar;
-import lambda.Foo;
-import lambda.MyLambda;
-import lambda.UseLambda;
-
 import java.util.function.Function;
 
 public class LambdaTest {
