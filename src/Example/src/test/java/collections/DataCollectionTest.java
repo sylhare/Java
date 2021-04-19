@@ -10,18 +10,20 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
+import org.junit.jupiter.api.Test;
+
 /**
  * Source https://www.javatpoint.com/collections-in-java
  */
 public class DataCollectionTest {
-    public static void main(String[] args) {
 
+    @Test
+    public void dataCollectionTest() {
         exMap();
         exHashTable();
         exHashSet();
         exCollection();
         ex2DList();
-
     }
 
     /**

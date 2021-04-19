@@ -2,9 +2,12 @@ package lambda;
 
 import java.util.function.Function;
 
+import org.junit.jupiter.api.Test;
+
 public class LambdaTest {
 
-  public static void main(String[] args) {
+  @Test
+  public void lambdaTest() {
     MyLambda myLambda = parameter -> parameter + " from myLambda";
     String result = UseLambda.add("Message ", myLambda);
     System.out.println("1 --- " + result);

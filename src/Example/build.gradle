@@ -1,20 +1,33 @@
 plugins {
     id 'java'
+    id 'jacoco'
 }
 
-group 'github'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
 }
 
-java {
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
 
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.enabled true
+        html.destination layout.buildDirectory.dir('reports/jacoco/html').get().asFile
+    }
 }

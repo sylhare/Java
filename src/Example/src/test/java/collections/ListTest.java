@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.junit.jupiter.api.Test;
+
 /**
  * Ecrire une classe Java avec 3 méthodes statiques pour manipuler
  * une collection de chaîne.
@@ -17,10 +19,8 @@ import java.util.List;
 public class ListTest {
     public static List<String> aTestList;
 
-    /**
-     * Main
-     */
-    public static void main(String[] args) {
+    @Test
+    public void listTest() {
 
         setUp();
         aTestList.forEach(System.out::println);

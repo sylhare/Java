@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.junit.jupiter.api.Test;
+
 
 /**
  * https://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
@@ -11,7 +13,8 @@ import java.util.stream.Collectors;
 
 public class StreamTest {
 
-  public static void main(String[] args) {
+  @Test
+  public void streamTest() {
     String string = "abc-de3-2fg";
 
     String s1 = string.chars().filter(Character::isLetter)
