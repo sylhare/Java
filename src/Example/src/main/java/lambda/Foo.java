@@ -7,10 +7,10 @@ import java.util.function.Function;
  * How to use java.util.function.Function for simple method as parameter function. Here is a simple example:
  * Basically you have a Foo object with a default constructor. A method that will be called as a parameter from the parametrisedMethod which is of type Function<String, Foo>.
  * Function<String, Foo> means that the function takes a String as parameter and return a Foo.
- *
+ * <p>
  * The Foo::Method correspond to a lambda like x -> Foo.method(x);
  * parametrisedMethod(Foo::method) could be seen as x -> parametrisedMethod(Foo.method(x))
- *
+ * <p>
  * The .apply("from a method") is basically to do parametrisedMethod(Foo.method("from a method"))
  * Which will then return in the output:
  * >> I'm a Foo from a method
@@ -18,19 +18,19 @@ import java.util.function.Function;
 
 public class Foo {
 
-  private Foo(String parameter) {
-    System.out.println("I'm a Foo " + parameter);
-  }
+    private Foo(String parameter) {
+        System.out.println("I'm a Foo " + parameter);
+    }
 
-  public static Foo method(final String parameter) {
-    return new Foo(parameter);
-  }
+    public static Foo method(final String parameter) {
+        return new Foo(parameter);
+    }
 
-  private static Function<String, Foo> parametrisedMethod(Function<String, Foo> function) {
-    return function;
-  }
+    private static Function<String, Foo> parametrisedMethod(Function<String, Foo> function) {
+        return function;
+    }
 
-  public static void main(String[] args) {
-    parametrisedMethod(Foo::method).apply("from a method");
-  }
+    public static void main(String[] args) {
+        parametrisedMethod(Foo::method).apply("from a method");
+    }
 }

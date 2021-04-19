@@ -2,5 +2,5 @@ package lambda;
 
 @FunctionalInterface
 public interface Bar {
-  Foo method(String string);
+    Foo method(String string);
 }

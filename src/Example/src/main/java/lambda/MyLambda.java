@@ -2,6 +2,6 @@ package lambda;
 
 @FunctionalInterface
 public interface MyLambda {
-  String method(String string);
+    String method(String string);
 }
 

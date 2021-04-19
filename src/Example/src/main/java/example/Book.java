@@ -1,13 +1,13 @@
 package example;
 
 abstract class Book {
-  String title;
-  String author;
+    String title;
+    String author;
 
-  Book(String title, String author) {
-    this.title = title;
-    this.author = author;
-  }
+    Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
 
-  abstract void display();
+    abstract void display();
 }

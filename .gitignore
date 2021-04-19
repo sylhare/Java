@@ -6,6 +6,7 @@ ehthumbs.db
 *.iml
 *.class
 .idea/*.xml
+**/.idea/**
 *.groovy
 Enumtest.java
 
@@ -56,6 +57,4 @@ Temporary Items
 # Java
 **/.gradle/*
 **/out/**
-**/.idea/**
-*.jar
 **/build/**
