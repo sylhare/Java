@@ -52,14 +52,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-src/Cucumber/.idea/workspace.xml
-src/Cucumber/.idea/*
-src/Cucumber/.idea/*
-src/Java_Hero/.idea/*
-src/GradleQuickStart/.idea/*
-src/Springboot/.gradle/*
-src/Springboot/*
-**/.gradle/**
+
+# Java
+**/.gradle/*
+**/out/**
 **/.idea/**
 *.jar
 **/build/**
