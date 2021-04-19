@@ -1,14 +1,15 @@
 package example;
 
-import junit.framework.TestCase;
-import org.junit.Test;
 
-public class MyBookTest extends TestCase {
+import org.junit.jupiter.api.Test;
 
-  @Test
-  public void testDisplay() {
-    MyBook bookie = new MyBook("title", "auther", 1);
-    bookie.display();
-  }
+
+public class MyBookTest {
+
+    @Test
+    public void testDisplay() {
+        MyBook bookie = new MyBook("title", "auther", 1);
+        bookie.display();
+    }
 
 }
