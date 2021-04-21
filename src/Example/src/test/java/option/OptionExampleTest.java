@@ -8,6 +8,9 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.atMostOnce;
 import static org.mockito.Mockito.verify;
 
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -54,6 +57,16 @@ class OptionExampleTest {
         optionalExample.externalDependency = mockDependency;
 
         assertNull(optionalExample.optionalNullOf());
+        verify(mockDependency, atMostOnce()).supplyData();
+    }
+
+    @Test
+    public void optionalNullGetTest() {
+        given(mockDependency.supplyData()).willReturn(null);
+        optionalExample.externalDependency = mockDependency;
+
+        Optional<String> value = optionalExample.dataWrapper();
+        assertThrows(NoSuchElementException.class, value::get);
         verify(mockDependency, atMostOnce()).supplyData();
     }
 

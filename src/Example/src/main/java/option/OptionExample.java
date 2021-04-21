@@ -14,13 +14,12 @@ public class OptionExample {
         return dataWrapper().orElse(null);
     }
 
-    private Optional<String> dataWrapper() {
+    public Optional<String> dataWrapper() {
         return Optional.ofNullable(externalDependency.supplyData());
     }
 
     public String getData() {
-        Optional<String> optionalData = dataWrapper();
-        return optionalData
+        return dataWrapper()
                 .map(String::toUpperCase)
                 .orElse(null);
     }

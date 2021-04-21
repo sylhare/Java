@@ -1,9 +1,6 @@
 package option;
 
-import static java.lang.String.format;
-
 import org.junit.jupiter.api.Test;
-
 
 class RandomNullTest {
 
@@ -13,7 +10,7 @@ class RandomNullTest {
         Integer amountOfNull = 0;
         for (int i = 0; i < 10; i++) {
             try {
-                System.out.println(format("print %s", randomNull.supplyData().toLowerCase()));
+                System.out.printf("print %s%n", randomNull.supplyData().toLowerCase());
             } catch (Exception e) {
                 amountOfNull++;
             }
@@ -21,5 +18,4 @@ class RandomNullTest {
         System.out.println("It's a bad practice to put try and catch in test :P");
         System.out.printf("Number of time null %s%n", amountOfNull);
     }
-
 }
