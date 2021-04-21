@@ -23,37 +23,55 @@ class OptionExampleTest {
 
     @Test
     public void optionalOfTest() {
-        given(mockDependency.getData()).willReturn(DATA);
+        given(mockDependency.supplyData()).willReturn(DATA);
         optionalExample.externalDependency = mockDependency;
 
         assertEquals(DATA, optionalExample.optionalOf());
-        verify(mockDependency, atMostOnce()).getData();
+        verify(mockDependency, atMostOnce()).supplyData();
     }
 
     @Test
     public void optionalOfFailureTest() {
-        given(mockDependency.getData()).willReturn(null);
+        given(mockDependency.supplyData()).willReturn(null);
         optionalExample.externalDependency = mockDependency;
 
         assertThrows(NullPointerException.class, optionalExample::optionalOf);
-        verify(mockDependency, atMostOnce()).getData();
+        verify(mockDependency, atMostOnce()).supplyData();
     }
 
     @Test
     public void optionalNullOfDataTest() {
-        given(mockDependency.getData()).willReturn(DATA);
+        given(mockDependency.supplyData()).willReturn(DATA);
         optionalExample.externalDependency = mockDependency;
 
         assertEquals(DATA, optionalExample.optionalNullOf());
-        verify(mockDependency, atMostOnce()).getData();
+        verify(mockDependency, atMostOnce()).supplyData();
     }
 
     @Test
     public void optionalNullOfNullTest() {
-        given(mockDependency.getData()).willReturn(null);
+        given(mockDependency.supplyData()).willReturn(null);
         optionalExample.externalDependency = mockDependency;
 
         assertNull(optionalExample.optionalNullOf());
-        verify(mockDependency, atMostOnce()).getData();
+        verify(mockDependency, atMostOnce()).supplyData();
+    }
+
+    @Test
+    void getDataTest() {
+        given(mockDependency.supplyData()).willReturn(DATA);
+        optionalExample.externalDependency = mockDependency;
+
+        assertEquals(DATA.toUpperCase(), optionalExample.getData());
+        verify(mockDependency, atMostOnce()).supplyData();
+    }
+
+    @Test
+    void getDataNullTest() {
+        given(mockDependency.supplyData()).willReturn(null);
+        optionalExample.externalDependency = mockDependency;
+
+        assertNull(optionalExample.getData());
+        verify(mockDependency, atMostOnce()).supplyData();
     }
 }
