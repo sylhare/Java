@@ -1,6 +1,8 @@
 package option;
 
+import static option.RandomNull.DATA;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.atMostOnce;
@@ -21,19 +23,37 @@ class OptionExampleTest {
 
     @Test
     public void optionalOfTest() {
-        given(mockDependency.doStuff()).willReturn("Value");
+        given(mockDependency.getData()).willReturn(DATA);
         optionalExample.externalDependency = mockDependency;
 
-        assertEquals("Value", optionalExample.optionalOf());
-        verify(mockDependency, atMostOnce()).doStuff();
+        assertEquals(DATA, optionalExample.optionalOf());
+        verify(mockDependency, atMostOnce()).getData();
     }
 
     @Test
-    public void optionalOfNullTest() {
-        given(mockDependency.doStuff()).willReturn(null);
+    public void optionalOfFailureTest() {
+        given(mockDependency.getData()).willReturn(null);
         optionalExample.externalDependency = mockDependency;
 
         assertThrows(NullPointerException.class, optionalExample::optionalOf);
-        verify(mockDependency, atMostOnce()).doStuff();
+        verify(mockDependency, atMostOnce()).getData();
+    }
+
+    @Test
+    public void optionalNullOfDataTest() {
+        given(mockDependency.getData()).willReturn(DATA);
+        optionalExample.externalDependency = mockDependency;
+
+        assertEquals(DATA, optionalExample.optionalNullOf());
+        verify(mockDependency, atMostOnce()).getData();
+    }
+
+    @Test
+    public void optionalNullOfNullTest() {
+        given(mockDependency.getData()).willReturn(null);
+        optionalExample.externalDependency = mockDependency;
+
+        assertNull(optionalExample.optionalNullOf());
+        verify(mockDependency, atMostOnce()).getData();
     }
 }

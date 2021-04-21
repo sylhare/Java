@@ -13,7 +13,7 @@ class RandomNullTest {
         Integer amountOfNull = 0;
         for (int i = 0; i < 10; i++) {
             try {
-                System.out.println(format("print %s", randomNull.doStuff().toLowerCase()));
+                System.out.println(format("print %s", randomNull.getData().toLowerCase()));
             } catch (Exception e) {
                 amountOfNull++;
             }
