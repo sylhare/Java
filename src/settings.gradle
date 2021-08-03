@@ -1,0 +1,5 @@
+rootProject.name = 'multi'
+include 'Cucumber'
+include 'example'
+include 'hello'
+include 'GradleQuickStart'

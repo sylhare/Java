@@ -1,0 +1,16 @@
+allprojects {
+    apply plugin: 'java'
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+subprojects {
+
+    test {
+        testLogging.showStandardStreams = true
+    }
+
+}
