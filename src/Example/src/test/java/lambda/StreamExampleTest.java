@@ -20,4 +20,15 @@ class StreamExampleTest {
         assertFalse(StreamExample.isValid("allo", "it", "is", "[.hello]"));
     }
 
+    @Test
+    public void crossCheckListTest() {
+        assertTrue(StreamExample.crossCheckList(Arrays.asList("Hey", "this", "is", "my", "world")));
+    }
+
+
+    @Test
+    public void crossCheckListFailedTest() {
+        assertFalse(StreamExample.crossCheckList(Arrays.asList("Hey", "this", "is", "my", "code")));
+    }
+
 }
