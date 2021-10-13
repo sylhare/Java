@@ -12,15 +12,17 @@ import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
+import mockito.Dep.*;
+
 @MockitoSettings(strictness = Strictness.LENIENT)
 class ComplexServiceTest {
 
     @Mock
-    private Dep.A a;
+    private A a;
     @Mock
-    private Dep.B b;
+    private B b;
     @Spy
-    private Dep.C c;
+    private C c;
     @Spy
     @InjectMocks
     private SimpleService simpleService;

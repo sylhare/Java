@@ -1,8 +1,10 @@
 package mockito;
 
+import mockito.Dep.*;
+
 public class ComplexService {
-    public Dep.B depB;
-    public Dep.C depC;
+    public B depB;
+    public C depC;
     public SimpleService simpleService;
 
     public void complexLogic() {
@@ -11,7 +13,7 @@ public class ComplexService {
         simpleService.simpleLogic();
     }
 
-    public void set(Dep.B b, Dep.C c, SimpleService ss) {
+    public void set(B b, C c, SimpleService ss) {
         this.depB = b;
         this.depC = c;
         this.simpleService = ss;

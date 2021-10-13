@@ -6,9 +6,9 @@ public abstract class Dep {
         System.out.printf("%s do stuff%n", this.getClass().getSimpleName());
     }
 
-    public class A extends Dep {
+    public static class A extends Dep {
     }
-    public class B extends Dep {
+    public static class B extends Dep {
     }
     public static class C extends Dep {
     }
