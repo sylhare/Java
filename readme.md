@@ -18,11 +18,21 @@ With the JVM, you can write `.java` files, that get compiled into Java byte code
 
 ## Environment set up
 
-OS: Windows 7+
+### MacOS
 
-I first learned with the NetBeans Bundle: [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html) which had the Oracle Jave SDK and the IDE.
+Get the open JDK (open source) with brew
+```sh
+brew install java8
+brew install java11
+```
 
-### Get and Install the SDK
+then switch between multiple version using an alias to the Home of your java:
+```sh
+java11='export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home'
+java8='export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home'
+```
+
+### Windows: Get and Install the SDK
 SDK for Software Development Kit also called JDK - Java Development Kit.
 You can get the Oracle Java SDK [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Choose the one for your system, here for windows. </br>
 There's the Oracle JDK (Commercial, Stable with proprietary code from Oracle) and the Open JDK (Open source, maintained by Oracle).
