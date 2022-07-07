@@ -32,7 +32,7 @@ java11='export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/C
 java8='export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home'
 ```
 
-### Windows: Get and Install the SDK
+### Windows
 SDK for Software Development Kit also called JDK - Java Development Kit.
 You can get the Oracle Java SDK [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Choose the one for your system, here for windows. </br>
 There's the Oracle JDK (Commercial, Stable with proprietary code from Oracle) and the Open JDK (Open source, maintained by Oracle).
@@ -55,7 +55,7 @@ I have added `setPathJava.bat` script to update the `JAVA_HOME`. The path variab
 ### Get an IDE
 IDE for Integrated Development Environments. </br>
 I'll be trying [IntelliJ: Community version](https://www.jetbrains.com/idea/#chooseYourEdition) by Jet Brain which has pro feature. 
-IF you click on the link you should be able to download it (community version is free).
+If you click on the link you should be able to download it (the community version is free).
 
 ## Maven
 
